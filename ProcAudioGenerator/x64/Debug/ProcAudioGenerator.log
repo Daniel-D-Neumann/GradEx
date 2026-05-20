@@ -1,0 +1,148 @@
+﻿  MarkovChain.cpp
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MidiParser.h(57,79): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(27,16): error C3646: 'Choose_Initial_State': unknown override specifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(27,36): error C2059: syntax error: '('
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(28,2): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(34,16): error C3646: 'Choose_Next_State': unknown override specifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(34,33): error C2059: syntax error: '('
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(35,2): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(47,26): error C2061: syntax error: identifier 'CombinedState'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(142,16): error C3646: 'state_vals': unknown override specifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(142,26): error C2143: syntax error: missing ',' before '['
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(142,46): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(102,3): error C2065: 'CombinedState': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(102,17): error C2146: syntax error: missing ';' before identifier 'combined_state'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(102,17): error C2065: 'combined_state': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(106,18): error C2676: binary '==': 'const State' does not define this operator or a conversion to a type acceptable to the predefined operator
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(112,4): error C2065: 'combined_state': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(112,24): error C2065: 'CombinedState': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(112,38): error C2146: syntax error: missing ')' before identifier 'states'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(114,77): error C2677: binary '+': no global operator found which takes type 'const State' (or there is no acceptable conversion)
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(115,3): error C2065: 'state_vals': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(115,29): error C2065: 'combined_state': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(34,11): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovConsts.h(27,1): message : could be 'State &State::operator =(State &&)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovConsts.h(27,1): message : or       'State &State::operator =(const State &)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(34,11): message : while trying to match the argument list '(State, int)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(48,12): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovConsts.h(27,1): message : could be 'State &State::operator =(State &&)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovConsts.h(27,1): message : or       'State &State::operator =(const State &)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(48,12): message : while trying to match the argument list '(State, int)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(57,39): error C2677: binary '[': no global operator found which takes type '_Ty' (or there is no acceptable conversion)
+          with
+          [
+              _Ty=State
+          ]
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(60,3): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(613,1): message : could be 'std::optional<State> &std::optional<State>::operator =(std::optional<State> &&)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(613,1): message : or       'std::optional<State> &std::optional<State>::operator =(const std::optional<State> &)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(280,28): message : or       'std::optional<State> &std::optional<State>::operator =(std::nullopt_t) noexcept'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(318,28): message : or       'std::optional<State> &std::optional<State>::operator =(std::optional<_Ty2> &&) noexcept(<expr>)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(60,3): message : 'std::optional<State> &std::optional<State>::operator =(std::optional<_Ty2> &&) noexcept(<expr>)': could not deduce template argument for 'std::optional<_Ty2> &&' from 'int'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(304,28): message : or       'std::optional<State> &std::optional<State>::operator =(const std::optional<_Ty2> &) noexcept(<expr>)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(60,3): message : 'std::optional<State> &std::optional<State>::operator =(const std::optional<_Ty2> &) noexcept(<expr>)': could not deduce template argument for 'const std::optional<_Ty2> &' from 'int'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(289,28): message : or       'std::optional<State> &std::optional<State>::operator =(_Ty2 &&) noexcept(<expr>)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(60,31): message : 'std::optional<State> &std::optional<State>::operator =(_Ty2 &&) noexcept(<expr>)': could not deduce template argument for '__formal'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(60,3): message : while trying to match the argument list '(std::optional<State>, int)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(144,13): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovConsts.h(27,1): message : could be 'State &State::operator =(State &&)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovConsts.h(27,1): message : or       'State &State::operator =(const State &)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(144,13): message : while trying to match the argument list '(State, int)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(201,28): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovConsts.h(27,1): message : could be 'State &State::operator =(State &&)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovConsts.h(27,1): message : or       'State &State::operator =(const State &)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(201,28): message : while trying to match the argument list '(State, int)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(220,39): error C2677: binary '[': no global operator found which takes type '_Ty' (or there is no acceptable conversion)
+          with
+          [
+              _Ty=State
+          ]
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(223,3): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(613,1): message : could be 'std::optional<State> &std::optional<State>::operator =(std::optional<State> &&)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(613,1): message : or       'std::optional<State> &std::optional<State>::operator =(const std::optional<State> &)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(280,28): message : or       'std::optional<State> &std::optional<State>::operator =(std::nullopt_t) noexcept'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(318,28): message : or       'std::optional<State> &std::optional<State>::operator =(std::optional<_Ty2> &&) noexcept(<expr>)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(223,3): message : 'std::optional<State> &std::optional<State>::operator =(std::optional<_Ty2> &&) noexcept(<expr>)': could not deduce template argument for 'std::optional<_Ty2> &&' from 'int'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(304,28): message : or       'std::optional<State> &std::optional<State>::operator =(const std::optional<_Ty2> &) noexcept(<expr>)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(223,3): message : 'std::optional<State> &std::optional<State>::operator =(const std::optional<_Ty2> &) noexcept(<expr>)': could not deduce template argument for 'const std::optional<_Ty2> &' from 'int'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\optional(289,28): message : or       'std::optional<State> &std::optional<State>::operator =(_Ty2 &&) noexcept(<expr>)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(223,31): message : 'std::optional<State> &std::optional<State>::operator =(_Ty2 &&) noexcept(<expr>)': could not deduce template argument for '__formal'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(223,3): message : while trying to match the argument list '(std::optional<State>, int)'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(266,52): error C2761: 'void MarkovChain::Decode_State_Index(void) const': redeclaration of member is not allowed
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(266,38): error C2065: 'CombinedState': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(266,52): error C2146: syntax error: missing ')' before identifier 'stateIndex'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(267,1): error C2143: syntax error: missing ';' before '{'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(267,1): error C2447: '{': missing function header (old-style formal list?)
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(295,22): error C2676: binary '%': 'State' does not define this operator or a conversion to a type acceptable to the predefined operator
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(296,9): error C2676: binary '/=': 'State' does not define this operator or a conversion to a type acceptable to the predefined operator
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(298,15): error C2440: '=': cannot convert from 'State' to 'int'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(298,15): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(322,6): error C2660: 'MarkovChain::Decode_State_Index': function does not take 2 arguments
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(47,7): message : see declaration of 'MarkovChain::Decode_State_Index'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(322,6): message : while trying to match the argument list '(int, std::string [10])'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(330,5): error C2660: 'MarkovChain::Decode_State_Index': function does not take 2 arguments
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(47,7): message : see declaration of 'MarkovChain::Decode_State_Index'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.cpp(330,5): message : while trying to match the argument list '(int, std::string [10])'
+  MidiParser.cpp
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MidiParser.h(57,79): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  SoundGenerator.cpp
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MidiParser.h(57,79): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(27,16): error C3646: 'Choose_Initial_State': unknown override specifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(27,36): error C2059: syntax error: '('
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(28,2): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(34,16): error C3646: 'Choose_Next_State': unknown override specifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(34,33): error C2059: syntax error: '('
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(35,2): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(47,26): error C2061: syntax error: identifier 'CombinedState'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(142,16): error C3646: 'state_vals': unknown override specifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(142,26): error C2143: syntax error: missing ',' before '['
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(142,46): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(102,3): error C2065: 'CombinedState': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(102,17): error C2146: syntax error: missing ';' before identifier 'combined_state'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(102,17): error C2065: 'combined_state': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(106,18): error C2676: binary '==': 'const State' does not define this operator or a conversion to a type acceptable to the predefined operator
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(112,4): error C2065: 'combined_state': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(112,24): error C2065: 'CombinedState': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(112,38): error C2146: syntax error: missing ')' before identifier 'states'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(114,77): error C2677: binary '+': no global operator found which takes type 'const State' (or there is no acceptable conversion)
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(115,3): error C2065: 'state_vals': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(115,29): error C2065: 'combined_state': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(160,2): error C2065: 'CombinedState': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(160,16): error C2146: syntax error: missing ';' before identifier 'instrument_states'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(160,16): error C2065: 'instrument_states': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(161,9): error C2065: 'instrument_states': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(161,38): error C2065: 'instrument_states': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(167,4): error C2065: 'instrument_states': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(167,45): error C2039: 'Choose_Initial_State': is not a member of 'MarkovChain'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(17,7): message : see declaration of 'MarkovChain'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(183,50): error C2065: 'instrument_states': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(183,29): error C2660: 'MarkovChain::Decode_State_Index': function does not take 2 arguments
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(47,7): message : see declaration of 'MarkovChain::Decode_State_Index'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(183,29): message : while trying to match the argument list '()'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(228,4): error C2065: 'instrument_states': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(228,63): error C2039: 'Choose_Next_State': is not a member of 'MarkovChain'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(17,7): message : see declaration of 'MarkovChain'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\SoundGenerator.cpp(228,81): error C2065: 'instrument_states': undeclared identifier
+  main.cpp
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MidiParser.h(57,79): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(27,16): error C3646: 'Choose_Initial_State': unknown override specifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(27,36): error C2059: syntax error: '('
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(28,2): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(34,16): error C3646: 'Choose_Next_State': unknown override specifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(34,33): error C2059: syntax error: '('
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(35,2): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(47,26): error C2061: syntax error: identifier 'CombinedState'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(142,16): error C3646: 'state_vals': unknown override specifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(142,26): error C2143: syntax error: missing ',' before '['
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(142,46): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(102,3): error C2065: 'CombinedState': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(102,17): error C2146: syntax error: missing ';' before identifier 'combined_state'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(102,17): error C2065: 'combined_state': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(106,18): error C2676: binary '==': 'const State' does not define this operator or a conversion to a type acceptable to the predefined operator
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(112,4): error C2065: 'combined_state': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(112,24): error C2065: 'CombinedState': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(112,38): error C2146: syntax error: missing ')' before identifier 'states'
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(114,77): error C2677: binary '+': no global operator found which takes type 'const State' (or there is no acceptable conversion)
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(115,3): error C2065: 'state_vals': undeclared identifier
+D:\Docs\GitHub\FYP-prep\Audio\C++Synth\WAV_Writer\ProcAudioGenerator\MarkovChain.h(115,29): error C2065: 'combined_state': undeclared identifier
+  Generating Code...
