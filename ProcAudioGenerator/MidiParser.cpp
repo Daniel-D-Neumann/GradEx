@@ -12,7 +12,8 @@ std::vector<int> MidiParser::Get_Relevant_Tracks(int instrument, float& seconds_
             {
                 if (midi_file[track][event].isTempo())
                 {
-                    seconds_per_tick = midi_file[track][event].getTempoBPM();
+                    //TODO change seconds_per_tick to double
+                    seconds_per_tick = static_cast<float>(midi_file[track][event].getTempoBPM());
                 }
             }
             if (midi_file[track][event].isTimbre())

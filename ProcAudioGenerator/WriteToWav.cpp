@@ -3,14 +3,14 @@
 
 void WavWriter::WriteAudioToFile(std::vector<double> buffer)
 {
-	for (float sample : buffer)
+	for (double sample : buffer)
 	{
 		int intSample = static_cast<int> (sample * maxAmplitude);
 		writeToFile(intSample, 2);
 	}
 
 	//update how big the data is
-	postDataPos = file.tellp();
+	postDataPos = static_cast<int>(file.tellp());
 	file.seekp(preDataPos);
 	writeToFile(postDataPos - preDataPos, 4);
 
@@ -27,7 +27,7 @@ void WavWriter::writeToFile(int value, int size)
 
 void WavWriter::setupWavFile(const char* filename)
 {
-	maxAmplitude = std::pow(2, bitDepth - 1) - 1;
+	maxAmplitude = static_cast<int>(std::pow(2, bitDepth - 1) - 1);
 
 	//get file, if none found creates new one
 	file.open(filename, std::ios::binary);
@@ -50,7 +50,7 @@ void WavWriter::setupWavFile(const char* filename)
 	//DATA
 	file << "data";
 	file << "----";
-	preDataPos = file.tellp();
+	preDataPos = static_cast<int>(file.tellp());
 }
 
 

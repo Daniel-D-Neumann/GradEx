@@ -44,8 +44,8 @@ int main()
 			Timer t1 = Timer("Read MIDI file");
 			soundGen->Load_File_Into_Generator("MidiSongs/MC.mid");
 
-			soundGen->Generate_Music(1000);
 		}
+		soundGen->Generate_Music(1000);
 		
 	}
 }

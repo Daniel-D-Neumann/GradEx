@@ -40,7 +40,7 @@ class SoundGenerator
 {
 private:
 	//possible instruments to play
-	Instrument* instruments[NUM_AVAILABLE_INSTRUMENTS];
+	Instrument instruments[NUM_AVAILABLE_INSTRUMENTS];
 	MarkovChain* markov_chains[NUM_AVAILABLE_INSTRUMENTS];
 
 	//a buffer to store the sound values in (1 for each state so they can be combined)

@@ -1,0 +1,17 @@
+Context Aware Markov Chains:
+Take conditions of note start and end
+find all notes that play in between these points
+store this sequence as a set phrase?
+
+Or alternatively, make a simultaneous notes category
+vector of note vectors (may have multiple notes required e.g. a chord)
+this keeps all notes that can be played simultaneously with this note
+then during generation when this note appears, fill the length of this note with notes that can be played with it
+make sure not to add notes that have already started to this list
+
+Use fourier transform to create instruments
+store out as readable format?
+Instruments have different properties for different octaves
+so take multiple samples and linearly interpolate between them?
+
+Change instrument as the only part that changes in sound is the oscillator values
