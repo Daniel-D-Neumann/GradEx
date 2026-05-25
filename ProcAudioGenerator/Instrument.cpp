@@ -1,15 +1,12 @@
 #include "Instrument.h"
 
-double Instrument::Scale(int noteID)
-{
-	return 220 * pow(1.0594630943592952645618252949463, noteID);
-}
-
+//Moves a frequency by a number of semitones e.g. a 12 semitone jump is up an octave
 double Instrument::MoveSemitones(float curFreq, int numSemitones)
 {
 	return curFreq * pow(1.0594630943592952645618252949463, numSemitones);
 }
 
+//Finds the maximum possible value from additive synthesis for this instrument, used to normalise amplitude
 void Instrument::CalculateMaxAmp()
 {
 	additive_max_amp = 0;
@@ -20,12 +17,17 @@ void Instrument::CalculateMaxAmp()
 	}
 }
 
+//Fills a buffer with the amplitude values for the instrument for a given duration
 void Instrument::Sound(std::vector<double>* buffer, double duration, float frequency, float amplitude, float sampleRate)
 {
+	//How far through the duration
 	float time = 0;
+	//The distance to step each iteration
 	float timeOffset = 1 / sampleRate;
+	//A calculated value to phase out/in sounds to prevent loud clicks
 	double fade_out = 1;
 	double fade_in = 1;
+	//How many samples are going to be created
 	double total_samples = sampleRate * duration;
 
 	buffer->reserve(static_cast<size_t>(total_samples));

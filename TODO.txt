@@ -14,4 +14,4 @@ store out as readable format?
 Instruments have different properties for different octaves
 so take multiple samples and linearly interpolate between them?
 
-Change instrument as the only part that changes in sound is the oscillator values
+Cache instrument.sound so it doesn't have to be recalculated a lot

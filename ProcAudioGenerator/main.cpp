@@ -2,6 +2,7 @@
 #include "SoundGenerator.h"
 #include "MidiParser.h"
 #include "Timer.h"
+#include "FourierTransformation.h"
 
 int main()
 {
@@ -34,18 +35,21 @@ int main()
 		output->WriteAudioToFile(harmC);*/
 
 		//WHAT GENERATES THE SOUND
-		SoundGenerator* soundGen = new SoundGenerator();
+		//SoundGenerator* soundGen = new SoundGenerator();
 
 		//NEED TO LOAD A FILE TO BE ABLE TO GENERATE MUSIC
 		//TEXT FILE WITH CUSTOM RTTTL FORMAT
 		//soundGen->Load_File_Into_Generator("MySong.txt");
 		//MIDI FILE
-		{
-			Timer t1 = Timer("Read MIDI file");
-			soundGen->Load_File_Into_Generator("MidiSongs/MC.mid");
+		//{
+		//	Timer t1 = Timer("Read MIDI file");
+		//	soundGen->Load_File_Into_Generator("MidiSongs/MC.mid");
+		//
+		//}
+		//soundGen->Generate_Music(1000);
 
-		}
-		soundGen->Generate_Music(1000);
-		
+		FourierTransformation FT;
+		FT.NextPowerOfTwo(44100);
+
 	}
 }

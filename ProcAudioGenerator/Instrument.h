@@ -23,6 +23,7 @@ struct FrequencyBreakdown
 class Instrument
 {
 protected:
+	//overall volume
 	double volume = 1.0;
 
 public:
@@ -30,16 +31,18 @@ public:
 	Instrument() {}
 	~Instrument() {}
 	ADSREnvelope env;
-	double Scale(int noteID);
 	double MoveSemitones(float curFreq, int numSemitones);
 	virtual void Sound(std::vector<double>* buffer, double duration, float frequency, float amplitude, float sampleRate = 44100);
 
 	void CalculateMaxAmp();
 
+	//Uses additive synthesis of constituent frequencies making up a sound
+	//storing the maximum amplitude from the addition allows for normalisation of the volume so as not to break ears (:
 	double additive_max_amp = 0;
 	std::vector<FrequencyBreakdown> constituent_frequencies;
 };
 
+//OBSELETE
 class Silence : public Instrument
 {
 public:

@@ -146,6 +146,7 @@
     <ClCompile Include="Oscillator.cpp" />
     <ClCompile Include="SoundGenerator.cpp" />
     <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Vector.cpp" />
     <ClCompile Include="WriteToWav.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +164,7 @@
     <ClInclude Include="Oscillator.h" />
     <ClInclude Include="SoundGenerator.h" />
     <ClInclude Include="Timer.h" />
+    <ClInclude Include="Vector.h" />
     <ClInclude Include="WriteToWav.h" />
   </ItemGroup>
   <ItemGroup>
