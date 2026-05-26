@@ -17,7 +17,7 @@ class InstrumentSerialser
 		std::ifstream file(required_file_path);
 		json data = json::parse(file);
 
-		auto  json_instruments = data["Instruments"];
+		auto&  json_instruments = data["Instruments"];
 
 		for (const auto& instrument : json_instruments)
 		{

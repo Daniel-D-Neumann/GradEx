@@ -55,25 +55,25 @@ double Oscillator::GetValue(double frequency, double deltaTime, OscillatorTypes 
 		return MakeSin(frequency, deltaTime, phase_shift);
 		break;
 	case FMSIN:
-		return MakeFMSin(frequency, deltaTime, LFOHertz, LFOAmplitude, phase_shift);
+		return MakeFMSin(frequency, deltaTime, phase_shift, LFOHertz, LFOAmplitude);
 		break;
 	case SQUARE:
 		return MakeSquare(frequency, deltaTime, phase_shift);
 		break;
 	case FMSQUARE:
-		return MakeFMSquare(frequency, deltaTime, LFOHertz, LFOAmplitude, phase_shift);
+		return MakeFMSquare(frequency, deltaTime, phase_shift, LFOHertz, LFOAmplitude);
 		break;
 	case TRIANGLE:
 		return MakeTriangle(frequency, deltaTime, phase_shift);
 		break;
 	case FMTRIANGLE:
-		return MakeFMTriangle(frequency, deltaTime, LFOHertz, LFOAmplitude, phase_shift);
+		return MakeFMTriangle(frequency, deltaTime, phase_shift, LFOHertz, LFOAmplitude);
 		break;
 	case SAW:
 		return MakeSaw(frequency, deltaTime, phase_shift);
 		break;
 	case FMSAW:
-		return MakeFMSaw(frequency, deltaTime, LFOHertz, LFOAmplitude, phase_shift);
+		return MakeFMSaw(frequency, deltaTime, phase_shift, LFOHertz, LFOAmplitude);
 		break;
 	case RANDOM:
 		return /*2.0 **/ ((double)std::rand() / (double)RAND_MAX) - 1.0f;
