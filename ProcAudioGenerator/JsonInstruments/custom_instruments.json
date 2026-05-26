@@ -1,0 +1,13 @@
+{
+ "Instruments" : 
+ [
+  [
+    {"osc" :{"is_FM" : true,"oscillator_type" : 0,"LFO_hertz" : 0.0,"LFO_amp" : 0.0},"amp" : 1.0,"relative_semitones" : 0},
+    {"osc" :{"is_FM" : false,"oscillator_type" : 0,"LFO_hertz" : 0.0,"LFO_amp" : 0.0},"amp" : 1.0,"relative_semitones" : 0}
+   ],
+  [
+    {"osc" :{"is_FM" : false,"oscillator_type" : 0,"LFO_hertz" : 0.0,"LFO_amp" : 0.0},"amp" : 1.0,"relative_semitones" : 0},
+    {"osc" :{"is_FM" : false,"oscillator_type" : 0,"LFO_hertz" : 0.0,"LFO_amp" : 0.0},"amp" : 1.0,"relative_semitones" : 0}
+   ]
+ ]
+}

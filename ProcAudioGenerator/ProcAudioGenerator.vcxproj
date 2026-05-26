@@ -135,6 +135,7 @@
     <ClCompile Include="Envelopes.cpp" />
     <ClCompile Include="FourierTransformation.cpp" />
     <ClCompile Include="Instrument.cpp" />
+    <ClCompile Include="InstrumentSerialser.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MarkovChain.cpp" />
     <ClCompile Include="MidiFile\Binasc.cpp" />
@@ -153,6 +154,7 @@
     <ClInclude Include="Envelopes.h" />
     <ClInclude Include="FourierTransformation.h" />
     <ClInclude Include="Instrument.h" />
+    <ClInclude Include="InstrumentSerialser.h" />
     <ClInclude Include="MarkovChain.h" />
     <ClInclude Include="MarkovConsts.h" />
     <ClInclude Include="MidiFile\Binasc.h" />
@@ -174,6 +176,7 @@
   <ImportGroup Label="ExtensionTargets">
     <Import Project="packages\libfftw.redist.3.3.4\build\native\libfftw.redist.targets" Condition="Exists('packages\libfftw.redist.3.3.4\build\native\libfftw.redist.targets')" />
     <Import Project="packages\libfftw.3.3.4\build\native\libfftw.targets" Condition="Exists('packages\libfftw.3.3.4\build\native\libfftw.targets')" />
+    <Import Project="packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets" Condition="Exists('packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -181,5 +184,6 @@
     </PropertyGroup>
     <Error Condition="!Exists('packages\libfftw.redist.3.3.4\build\native\libfftw.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libfftw.redist.3.3.4\build\native\libfftw.redist.targets'))" />
     <Error Condition="!Exists('packages\libfftw.3.3.4\build\native\libfftw.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libfftw.3.3.4\build\native\libfftw.targets'))" />
+    <Error Condition="!Exists('packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets'))" />
   </Target>
 </Project>

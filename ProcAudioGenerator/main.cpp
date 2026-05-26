@@ -3,6 +3,7 @@
 #include "MidiParser.h"
 #include "Timer.h"
 #include "FourierTransformation.h"
+#include "InstrumentSerialser.h"
 
 int main()
 {
@@ -49,7 +50,7 @@ int main()
 		//soundGen->Generate_Music(1000);
 
 		FourierTransformation FT;
-		FT.NextPowerOfTwo(44100);
+		InstrumentSerialser IS;
 
 	}
 }

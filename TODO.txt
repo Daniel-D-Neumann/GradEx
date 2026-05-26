@@ -11,7 +11,16 @@ make sure not to add notes that have already started to this list
 
 Use fourier transform to create instruments
 store out as readable format?
+
+All instruments are now only sin / cosine waves with amp, freq, and phase
+change generate sound to accomodate for this
+only need to change to accomodate phase in case custom instruments want to be hand made?
+
 Instruments have different properties for different octaves
 so take multiple samples and linearly interpolate between them?
+
+For creating instruments using fourier. 
+Use Fourier transform to select the most influential frequencies.
+instead of moving semitones, just use the raw frequencies to create the sound
 
 Cache instrument.sound so it doesn't have to be recalculated a lot
