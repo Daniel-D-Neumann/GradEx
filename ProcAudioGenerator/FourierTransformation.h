@@ -5,12 +5,16 @@
 #include <vector>
 #include <numeric>
 #include <execution>
+#include <functional>
 
 struct WaveData
 {
 	float frequency = 0;
 	float amp = 0;
 	float phase = 0;
+
+	WaveData() {}
+	WaveData(float frequency, float amp, float phase);
 };
 
 struct Complex
@@ -113,11 +117,7 @@ public:
 
 			float freq = frequency_index * frequency_step;
 			float phase = -atan2f(sample_center.y, sample_center.x);
-			result.at(frequency_index) = WaveData{
-				.frequency = freq,
-				.amp = amp,
-				.phase = phase,
-			};
+			result.at(frequency_index) = WaveData(freq, amp, phase);
 		}
 
 		return result;
@@ -153,6 +153,14 @@ public:
 			double freq = i / (num_frequencies - 1.0) * nyquist_freq;
 			waves[i] = WaveData(static_cast<float>(freq), static_cast<float>(result[i].Magnitude() / num_samples * amp_scale), static_cast<float>(-result[i].Angle()));
 		}
+	}
+
+	void SortByAmplitudeDesc(std::vector<WaveData>& wave_data) const
+	{
+		std::sort(wave_data.begin(), wave_data.end(), [](const WaveData& lhs, const WaveData& rhs)
+			{
+				return lhs.amp > rhs.amp;
+			});
 	}
 
 	std::vector<Complex> FFTInternal(const std::vector<Complex>& values)

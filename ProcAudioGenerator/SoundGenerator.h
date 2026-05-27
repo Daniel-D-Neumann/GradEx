@@ -58,11 +58,15 @@ private:
 	//TODO
 	//void Pre_Generate_Instrument_Sounds();
 
+	std::vector<std::vector<float>> loadedWavs;
+
 public:
 	SoundGenerator();
 	~SoundGenerator();
 
-	bool Load_File_Into_Generator(std::string filename);
+	bool Load_Music_File_Into_Generator(std::string filename);
+
+	void Load_Wav_File_Into_Generator(std::string filename);
 
 	void Generate_Music(int length = -1);
 };

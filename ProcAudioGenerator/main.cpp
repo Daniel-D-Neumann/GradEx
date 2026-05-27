@@ -36,18 +36,20 @@ int main()
 		output->WriteAudioToFile(harmC);*/
 
 		//WHAT GENERATES THE SOUND
-		//SoundGenerator* soundGen = new SoundGenerator();
+		SoundGenerator* soundGen = new SoundGenerator();
 
 		//NEED TO LOAD A FILE TO BE ABLE TO GENERATE MUSIC
 		//TEXT FILE WITH CUSTOM RTTTL FORMAT
 		//soundGen->Load_File_Into_Generator("MySong.txt");
 		//MIDI FILE
-		//{
-		//	Timer t1 = Timer("Read MIDI file");
-		//	soundGen->Load_File_Into_Generator("MidiSongs/MC.mid");
-		//
-		//}
-		//soundGen->Generate_Music(1000);
+		/*{
+			Timer t1 = Timer("Read MIDI file");
+			soundGen->Load_Music_File_Into_Generator("MidiSongs/MC.mid");
+		
+		}
+		soundGen->Generate_Music(10);*/
+
+		soundGen->Load_Wav_File_Into_Generator("MyWavFile.wav");
 
 		FourierTransformation FT;
 		InstrumentSerialser IS;

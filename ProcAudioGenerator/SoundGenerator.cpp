@@ -4,7 +4,7 @@
 SoundGenerator::SoundGenerator()
 {
 	Init_Instruments();
-	wav_output = new WavWriter("MyGeneratedWavFile.wav");
+	wav_output = new WavWriter("BlankGeneratedWavFile.wav");
 }
 
 void SoundGenerator::Init_Instruments()
@@ -383,7 +383,7 @@ void SoundGenerator::Init_Instruments()
 	env = ADSREnvelope(0.01, 0, 0, 1.0);
 	//freqs = ...
 
-	for (int instrument = 0; instrument < NUM_AVAILABLE_INSTRUMENTS; instrument++)
+	/*for (int instrument = 0; instrument < NUM_AVAILABLE_INSTRUMENTS; instrument++)
 	{
 		markov_chains[instrument] = new MarkovChain();
 		markov_chains[instrument]->instrument = instrument;
@@ -392,7 +392,7 @@ void SoundGenerator::Init_Instruments()
 	for (int i = 0; i < NUM_AVAILABLE_INSTRUMENTS * NUM_POSSIBLE_SYNCHRONOUS_STATES; i++)
 	{
 		note_buffers[i] = new std::vector<double>();
-	}
+	}*/
 }
 
 SoundGenerator::~SoundGenerator()
@@ -412,7 +412,7 @@ SoundGenerator::~SoundGenerator()
 	}
 }
 
-bool SoundGenerator::Load_File_Into_Generator(std::string filename)
+bool SoundGenerator::Load_Music_File_Into_Generator(std::string filename)
 {
 	File_Type file_type;
 	if (filename.find(".txt") != std::string::npos) file_type = TEXT;
@@ -452,6 +452,12 @@ bool SoundGenerator::Load_File_Into_Generator(std::string filename)
 	return true;
 
 }
+
+void SoundGenerator::Load_Wav_File_Into_Generator(std::string filename)
+{
+	loadedWavs.push_back(wav_output->ReadWavFile(filename));
+}
+
 bool SoundGenerator::Get_File_Instrument(std::string filename, File_Type file_type, std::vector<int>& instruments)
 {
 	if (file_type == TEXT)

@@ -1,4 +1,5 @@
 #include "WriteToWav.h"
+#include <string>
 
 
 void WavWriter::WriteAudioToFile(std::vector<double> buffer)
@@ -9,13 +10,15 @@ void WavWriter::WriteAudioToFile(std::vector<double> buffer)
 		writeToFile(intSample, 2);
 	}
 
-	//update how big the data is
+	//update how big the data chunk is
 	postDataPos = static_cast<int>(file.tellp());
-	file.seekp(preDataPos);
+	std::cout << postDataPos - preDataPos << std::endl;
+	file.seekp(preDataPos-4);
 	writeToFile(postDataPos - preDataPos, 4);
 
+	//update how big the file is
 	file.seekp(4, std::ios::beg);
-	writeToFile(postDataPos - 8, 4);
+	writeToFile(postDataPos - 8, 4); //-8 due to header data
 
 	file.seekp(postDataPos);
 }
@@ -34,7 +37,7 @@ void WavWriter::setupWavFile(const char* filename)
 
 	//HEADER
 	file << "RIFF";
-	file << "----";
+	file << "----"; //Size of file (filled in when writing to file)
 	file << "WAVE";
 
 	//FORMAT
@@ -49,8 +52,112 @@ void WavWriter::setupWavFile(const char* filename)
 
 	//DATA
 	file << "data";
-	file << "----";
+	file << "----"; //Size of data chunk (filled in when writing to file)
 	preDataPos = static_cast<int>(file.tellp());
+}
+
+std::vector<float> WavWriter::ReadWavFile(std::string filepath)
+{
+	std::vector<float> signal;
+
+	std::ifstream wav_file(filepath, std::ifstream::in, std::ios::binary);
+
+	if (wav_file.is_open())
+	{
+		//Read in all the relevant header data
+		WavHeader wav_data;
+		wav_file.read(reinterpret_cast<char*>(&wav_data), sizeof(WavHeader));
+
+		if (std::string(wav_data.wave, 4) != "WAVE" || std::string(wav_data.riff, 4) != "RIFF")
+		{
+			wav_file.close();
+			std::cerr << "Not a WAVE or RIFF!" << std::endl;
+			return signal;
+		}
+		
+		std::cout << wav_data.data_chunk_size << std::endl;
+
+		//Read all data as bytes from data chunk
+		std::vector<uint8_t> raw_data(wav_data.data_chunk_size);
+		wav_file.read(reinterpret_cast<char*>(raw_data.data()), wav_data.data_chunk_size);
+		
+
+		int num_samples = wav_data.data_chunk_size / (wav_data.bits_per_sample / 8);
+		signal.reserve(num_samples);
+
+		if (wav_data.audio_format == WAV_FORMAT_PCM)
+		{
+			//used to normalise value between -1 and 1
+			float norm_factor = 1.0f / powf(2,wav_data.bits_per_sample-1)-1;
+			switch (wav_data.bits_per_sample)
+			{
+			case 8:
+				for (int i = 0; i < num_samples; i++)
+				{
+					//unsigned so -128 to get + & - vals
+					int8_t sample = (raw_data[i] - 128);
+					//convert to float for normalisation between 0 and 1
+					float sample_float = static_cast<float>(sample);
+					sample_float *= norm_factor;
+					signal.push_back(sample_float);
+				}
+				break;
+			case 16:
+				for (int i = 0; i < num_samples; i++)
+				{
+					//data twice as big so jump twice as far into data
+					int16_t sample = *reinterpret_cast<int16_t*>(&raw_data[i * 2]);
+					float sample_float = static_cast<float>(sample);
+					sample_float *= norm_factor;
+					signal.push_back(sample_float);
+				}
+				break;
+			case 24:
+				for (int i = 0; i < num_samples; i++)
+				{
+					//No inherent 24 bit data type so shift the values into a 32 bit width
+					int32_t sample = (raw_data[i * 3] | (raw_data[i * 3 + 1] << 8) | (raw_data[i * 3 + 2] << 16));
+					//Then preserve the twos compliment bit
+					if (sample & 0x800000) sample |= ~0xFFFFFF;
+					float sample_float = static_cast<float>(sample);
+					sample_float *= norm_factor;
+					signal.push_back(sample_float);
+				}
+				break;
+			case 32:
+				for (int i = 0; i < num_samples; i++)
+				{
+					int32_t sample = reinterpret_cast<int32_t>(&raw_data[i * 4]);
+					float sample_float = static_cast<float>(sample);
+					sample_float *= norm_factor;
+					signal.push_back(sample_float);
+				}
+				break;
+			default:
+				std::cerr << "Unsupported PCM bit depth of " << wav_data.bits_per_sample << std::endl;
+				break;
+			}
+		}
+		else if (wav_data.audio_format == WAV_FORMAT_IEEE_FLOAT && wav_data.bits_per_sample == 32)
+		{
+			for (int i = 0; i < num_samples; i++)
+			{
+				signal.push_back(*reinterpret_cast<float*>(&raw_data[i * 4]));
+			}
+		}
+		else
+		{
+			std::cerr << "Unsupported format of" << wav_data.audio_format << std::endl;
+		}
+		
+		return signal;
+	}
+	else
+	{
+		std::cerr << "Couldn't open file" << std::endl;
+	}
+
+	return signal;
 }
 
 
