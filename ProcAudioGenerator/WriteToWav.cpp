@@ -12,7 +12,6 @@ void WavWriter::WriteAudioToFile(std::vector<double> buffer)
 
 	//update how big the data chunk is
 	postDataPos = static_cast<int>(file.tellp());
-	std::cout << postDataPos - preDataPos << std::endl;
 	int index = preDataPos - 4;
 	file.seekp(index);
 	writeToFile(postDataPos - preDataPos, 4);
@@ -92,7 +91,7 @@ std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 			switch (wav_data.bits_per_sample)
 			{
 			case 8:
-				for (int8_t i = 0; i < num_samples; i++)
+				for (int i = 0; i < num_samples; i++)
 				{
 					//unsigned so -128 to get + & - vals
 					int8_t sample = (raw_data[i] - 128);
@@ -103,7 +102,7 @@ std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 				}
 				break;
 			case 16:
-				for (int16_t i = 0; i < num_samples; i++)
+				for (int i = 0; i < num_samples; i++)
 				{
 					//data twice as big so jump twice as far into data
 					int index = i * 2;
@@ -129,7 +128,7 @@ std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 				}
 				break;
 			case 32:
-				for (int32_t i = 0; i < num_samples; i++)
+				for (int i = 0; i < num_samples; i++)
 				{
 					int index = i * 4;
 					int32_t sample = *reinterpret_cast<int32_t*>(&raw_data[index]);

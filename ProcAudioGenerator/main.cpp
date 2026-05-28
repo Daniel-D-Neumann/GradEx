@@ -91,6 +91,8 @@ int main()
 
 		soundGen->Load_Wav_File_Into_Generator("myWavFile.wav");
 
+		soundGen->Generate_Instrument_From_Wav(0);
+
 		InstrumentSerialser IS;
 
 	}

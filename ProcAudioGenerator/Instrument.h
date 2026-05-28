@@ -1,7 +1,11 @@
 #pragma once
+#include<nlohmann/json.hpp>
 #include "Envelopes.h"
 #include "Oscillator.h"
 #include <vector>
+
+using json = nlohmann::json;
+using namespace nlohmann::literals;
 
 static Oscillator oscillator = Oscillator();
 
@@ -20,6 +24,21 @@ struct FrequencyBreakdown
 	double phase = 0.0f;
 	double relative_semitones = 0;
 };
+
+static void to_json(json& j, const FrequencyBreakdown& f)
+{
+	j = json{ {"osc", {"is_FM", f.osc.is_FM }, {"oscillator_type", f.osc.oscillator_type}, {"LFO_hertz", f.osc.LFO_hertz}, {"LFO_amp", f.osc.LFO_amp}}, {"amp", f.amp}, {"phase", f.phase}, {"relative_semitones", f.relative_semitones} };
+}
+static void from_json(json& j, FrequencyBreakdown& f)
+{
+	f.osc.is_FM = j["osc"]["is_FM"].get<bool>();
+	f.osc.is_FM = j["osc"]["oscillator_type"].get<int>();
+	f.osc.is_FM = j["osc"]["LFO_hertz"].get<double>();
+	f.osc.is_FM = j["osc"]["LFO_amp"].get<double>();
+	f.osc.is_FM = j["amp"].get<double>();
+	f.osc.is_FM = j["phase"].get<double>();
+	f.osc.is_FM = j["relative_semitones"].get<double>();
+}
 
 struct WaveData
 {

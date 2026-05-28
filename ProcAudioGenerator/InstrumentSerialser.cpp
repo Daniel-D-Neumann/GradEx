@@ -60,7 +60,9 @@ std::vector<FrequencyBreakdown>* InstrumentSerialser::SaveInstrument(const std::
 
 	data["Instruments"] = custom_instruments;
 
+	std::string s = data.dump(4);
 
+	file << s;
 
 	return &instruments.back();
 }
