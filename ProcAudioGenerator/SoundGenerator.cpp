@@ -1,4 +1,5 @@
 #include "SoundGenerator.h"
+#include "FourierTransformation.h"
 #include "Timer.h"
 
 SoundGenerator::SoundGenerator()
@@ -453,11 +454,31 @@ bool SoundGenerator::Load_Music_File_Into_Generator(std::string filename)
 
 }
 
-void SoundGenerator::Load_Wav_File_Into_Generator(std::string filename)
+int SoundGenerator::Load_Wav_File_Into_Generator(std::string filename)
 {
-	//loadedWavs.push_back();
-	wav_output->WriteAudioToFile(wav_output->ReadWavFile(filename));
+	int index = static_cast<int>(loadedWavs.size());
+	loadedWavs.push_back(wav_output->ReadWavFile(filename));
+	return index;
+}
 
+void SoundGenerator::Generate_Instrument_From_Wav(int wav_index)
+{
+	std::vector<WaveData> constituent_waves = FourierTransformation::FFT(loadedWavs.at(wav_index), 44100);
+	FourierTransformation::SortByAmplitudeDesc(constituent_waves);
+
+	const int num_siginificant_frequencies = 100;
+	std::vector<FrequencyBreakdown> most_significant_frequencies;
+	most_significant_frequencies.reserve(num_siginificant_frequencies);
+
+	double mostSignificantFrequency = constituent_waves[0].frequency;
+
+	for (int i = 0; i < num_siginificant_frequencies; i++)
+	{
+		FrequencyBreakdown freq = instrument_serialiser.WaveDataToFrequencyBreakdown(constituent_waves[i], mostSignificantFrequency);
+		most_significant_frequencies.push_back(freq);
+	}
+
+	instrument_serialiser.SaveInstrument(most_significant_frequencies);
 }
 
 bool SoundGenerator::Get_File_Instrument(std::string filename, File_Type file_type, std::vector<int>& instruments)

@@ -1,9 +1,9 @@
 #include "Instrument.h"
 
 //Moves a frequency by a number of semitones e.g. a 12 semitone jump is up an octave
-double Instrument::MoveSemitones(float curFreq, int numSemitones)
+double Instrument::MoveSemitones(float curFreq, double numSemitones)
 {
-	return curFreq * pow(1.0594630943592952645618252949463, numSemitones);
+	return curFreq * pow(semitone_exponent, numSemitones);
 }
 
 //Finds the maximum possible value from additive synthesis for this instrument, used to normalise amplitude
@@ -38,7 +38,7 @@ void Instrument::Sound(std::vector<double>* buffer, double duration, float frequ
 		//add all the amplitudes of all constiuent frequencies that make this note
 		for (const FrequencyBreakdown& freq : constituent_frequencies)
 		{
-			sample += freq.amp * oscillator.GetValue(MoveSemitones(frequency, freq.relative_semitones), time, freq.osc.oscillator_type, freq.osc.LFO_hertz, freq.osc.LFO_amp);
+			sample += freq.amp * oscillator.GetValue(MoveSemitones(frequency, freq.relative_semitones), time, freq.osc.oscillator_type, freq.phase, freq.osc.LFO_hertz, freq.osc.LFO_amp);
 		}
 
 		//Modify by the amplitude of the envelope
@@ -77,4 +77,11 @@ void Silence::Sound(std::vector<double>* buffer, double duration, float frequenc
 	{
 		buffer->push_back(0);
 	}
+}
+
+WaveData::WaveData(float frequency, float amp, float phase)
+{
+	this->frequency = frequency;
+	this->amp = amp;
+	this->phase = phase;
 }

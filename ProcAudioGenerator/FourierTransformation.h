@@ -1,5 +1,6 @@
 #pragma once
 #include "Vector.h"
+#include "Instrument.h"
 #include <cmath>
 #include <numbers>
 #include <vector>
@@ -7,84 +8,98 @@
 #include <execution>
 #include <functional>
 
-struct WaveData
+namespace FourierTransformation
 {
-	float frequency = 0;
-	float amp = 0;
-	float phase = 0;
-
-	WaveData() {}
-	WaveData(float frequency, float amp, float phase);
-};
-
-struct Complex
-{
-	double X;
-	double Y; //imaginary
-
-	double Magnitude()
+	struct Complex
 	{
-		return sqrt(X * X + Y * Y);
-	}
-	double Angle()
+		double X;
+		double Y; //imaginary
+
+		double Magnitude()
+		{
+			return sqrt(X * X + Y * Y);
+		}
+		double Angle()
+		{
+			return atan2(Y, X);
+		}
+
+		Complex()
+		{
+			X = 0;
+			Y = 0;
+		}
+
+		Complex(double x, double y)
+		{
+			X = x;
+			Y = y;
+		}
+
+		Complex operator+=(const Complex& other)
+		{
+			X += other.X;
+			X += other.Y;
+			return *this;
+		}
+
+		Complex operator-=(const Complex& other)
+		{
+			X -= other.X;
+			X -= other.Y;
+			return *this;
+		}
+	};
+
+	static Complex operator+(const Complex& lhs, const Complex& rhs)
 	{
-		return atan2(Y, X);
+		return Complex(lhs.X + rhs.X, lhs.Y + rhs.Y);
 	}
 
-	Complex()
+	static Complex operator-(const Complex& lhs, const Complex& rhs)
 	{
-		X = 0;
-		Y = 0;
+		return Complex(lhs.X - rhs.X, lhs.Y - rhs.Y);
 	}
 
-	Complex(double x, double y)
+	static Complex operator*(const Complex& lhs, const Complex& rhs)
 	{
-		X = x;
-		Y = y;
+		return Complex(lhs.X * rhs.X - lhs.Y * rhs.Y, lhs.X * rhs.Y + lhs.Y * rhs.X);
 	}
 
-	Complex operator+=(const Complex& other)
+	static Complex CreateFromPolar(double angle, double magnitude)
 	{
-		X += other.X;
-		X += other.Y;
-		return *this;
+		return Complex(cos(angle) * magnitude, sin(angle) * magnitude);
 	}
 
-	Complex operator-=(const Complex& other)
+
+	static std::vector<Complex> TakeEverySecond(const std::vector<Complex>& values, bool startOnFirst)
 	{
-		X -= other.X;
-		X -= other.Y;
-		return *this;
+		std::vector<Complex> result;
+		result.reserve(values.size() / 2);
+		int offset = startOnFirst ? 0 : 1;
+		for (int i = 0; i < result.size(); i++)
+		{
+			int index = i * 2 + offset;
+			result.push_back(values[index]);
+		}
+
+		return result;
 	}
-};
 
-static Complex operator+(const Complex& lhs, const Complex& rhs)
-{
-	return Complex(lhs.X + rhs.X, lhs.Y + rhs.Y);
-}
-
-static Complex operator-(const Complex& lhs, const Complex& rhs)
-{
-	return Complex(lhs.X - rhs.X, lhs.Y - rhs.Y);
-}
-
-static Complex operator*(const Complex& lhs, const Complex& rhs)
-{
-	return Complex(lhs.X * rhs.X - lhs.Y * rhs.Y, lhs.X * rhs.Y + lhs.Y * rhs.X);
-}
-
-static Complex CreateFromPolar(double angle, double magnitude)
-{
-	return Complex(cos(angle) * magnitude, sin(angle) * magnitude);
-}
-
-class FourierTransformation
-{
-public:
+	static int NextPowerOfTwo(int num)
+	{
+		num -= 1;
+		num |= num >> 16;
+		num |= num >> 8;
+		num |= num >> 4;
+		num |= num >> 2;
+		num |= num >> 1;
+		return num + 1;
+	}
 
 	const double TAU = 2 * std::numbers::pi;
 
-	std::vector<WaveData> DFT(std::vector<float> signal, int sample_rate)
+	static std::vector<WaveData> DFT(std::vector<double> signal, int sample_rate)
 	{
 		//Number of frequencies to test
 		const float num_samples = static_cast<float>(signal.size());
@@ -100,10 +115,10 @@ public:
 			static int i = 0;
 			Vec2 sample_total = std::transform_reduce(std::execution::par, signal.begin(), signal.end(), Vec2(),
 				std::plus<>(),
-				[this, num_samples, frequency_index](const float& sample)
+				[num_samples, frequency_index](const double& sample)
 				{
 					float angle = (i++) / num_samples * static_cast<float>(TAU) * frequency_index;
-					return Vec2(cosf(angle),sinf(angle)) * sample;
+					return Vec2(cos(angle), sin(angle)) * sample;
 				});
 			i = 0;
 
@@ -123,16 +138,42 @@ public:
 		return result;
 	}
 
-	std::vector<WaveData> FFT(std::vector<float> signal, int sample_rate)
+	static std::vector<Complex> FFTInternal(const std::vector<Complex>& values)
+	{
+		int num_vals = static_cast<int>(values.size());
+		if (num_vals == 1)
+		{
+			return values;
+		}
+
+		std::vector<Complex> evenSteps = FFTInternal(TakeEverySecond(values, true));
+		std::vector<Complex> oddSteps = FFTInternal(TakeEverySecond(values, false));
+		std::vector<Complex> results;
+		results.resize(num_vals);
+
+		double angle_increment = TAU / num_vals;
+
+		for (int i = 0; i < num_vals; i++)
+		{
+			Complex c = CreateFromPolar(angle_increment * i, 1);
+			Complex new_c = (oddSteps[i] * c);
+			results[i] = evenSteps[i] + new_c;
+			int index = i + num_vals / 2;
+			results[index] = evenSteps[i] - new_c;
+		}
+
+		return results;
+	}
+
+	static std::vector<WaveData> FFT(const std::vector<double>& signal, int sample_rate)
 	{
 		const int num_samples = static_cast<int>(signal.size());
 		const int length_pow_2 = NextPowerOfTwo(num_samples);
-		signal.resize(length_pow_2);
 
 		const double nyquist_freq = sample_rate / 2.0;
 
 		std::vector<Complex> signal_complex;
-		signal_complex.reserve(num_samples);
+		signal_complex.resize(length_pow_2);
 		for (int i = 0; i < num_samples; i++)
 		{
 			signal_complex[i] = Complex(signal[i], 0);
@@ -153,64 +194,18 @@ public:
 			double freq = i / (num_frequencies - 1.0) * nyquist_freq;
 			waves[i] = WaveData(static_cast<float>(freq), static_cast<float>(result[i].Magnitude() / num_samples * amp_scale), static_cast<float>(-result[i].Angle()));
 		}
+
+		return waves;
 	}
 
-	void SortByAmplitudeDesc(std::vector<WaveData>& wave_data) const
+	static void SortByAmplitudeDesc(std::vector<WaveData>& wave_data)
 	{
 		std::sort(wave_data.begin(), wave_data.end(), [](const WaveData& lhs, const WaveData& rhs)
 			{
 				return lhs.amp > rhs.amp;
 			});
 	}
+}
 
-	std::vector<Complex> FFTInternal(const std::vector<Complex>& values)
-	{
-		int num_vals = static_cast<int>(values.size());
-		if (num_vals == 1)
-		{
-			return values;
-		}
 
-		std::vector<Complex> evenSteps = FFTInternal(TakeEverySecond(values, true));
-		std::vector<Complex> oddSteps = FFTInternal(TakeEverySecond(values, false));
-		std::vector<Complex> results;
-		results.resize(num_vals);
-
-		double angle_increment = TAU / num_vals;
-
-		for (int i = 0; i < num_vals; i++)
-		{
-			Complex c = CreateFromPolar(angle_increment * i, 1);
-			Complex new_c = (oddSteps[i] * c);
-			results[i] = evenSteps[i] + new_c;
-			results[i + num_vals / 2] = evenSteps[i] - new_c;
-		}
-
-		return results;
-	}
-
-	std::vector<Complex> TakeEverySecond(const std::vector<Complex>& values, bool startOnFirst)
-	{
-		std::vector<Complex> result;
-		result.reserve(values.size() / 2);
-		int offset = startOnFirst ? 0 : 1;
-		for (int i = 0; i < result.size(); i++)
-		{
-			result.push_back(values[i * 2 + offset]);
-		}
-
-		return result;
-	}
-
-	int NextPowerOfTwo(int num)
-	{
-		num -= 1;
-		num |= num >> 16;
-		num |= num >> 8;
-		num |= num >> 4;
-		num |= num >> 2;
-		num |= num >> 1;
-		return num + 1;
-	}
-};
 

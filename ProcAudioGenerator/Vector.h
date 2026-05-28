@@ -47,6 +47,7 @@ Vec2 operator-(const Vec2& lhs, const float rhs);
 
 Vec2 operator*(const float lhs, const Vec2& rhs);
 Vec2 operator*(const Vec2& lhs, const float rhs);
+Vec2 operator*(const Vec2& lhs, const double rhs);
 
 Vec2 operator*(const Vec2& lhs, const Vec2& rhs);
 

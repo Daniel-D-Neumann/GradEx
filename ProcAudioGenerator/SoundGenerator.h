@@ -1,5 +1,6 @@
 #pragma once
 #include "Instrument.h"
+#include "InstrumentSerialser.h"
 #include "WriteToWav.h"
 #include "MarkovChain.h"
 #include "MidiParser.h"
@@ -43,6 +44,8 @@ private:
 	Instrument instruments[NUM_AVAILABLE_INSTRUMENTS];
 	MarkovChain* markov_chains[NUM_AVAILABLE_INSTRUMENTS];
 
+	InstrumentSerialser instrument_serialiser;
+
 	//a buffer to store the sound values in (1 for each state so they can be combined)
 	std::vector<double>* note_buffers[NUM_AVAILABLE_INSTRUMENTS*NUM_POSSIBLE_SYNCHRONOUS_STATES];
 
@@ -58,7 +61,7 @@ private:
 	//TODO
 	//void Pre_Generate_Instrument_Sounds();
 
-	std::vector<std::vector<float>> loadedWavs;
+	std::vector<std::vector<double>> loadedWavs;
 
 public:
 	SoundGenerator();
@@ -66,7 +69,9 @@ public:
 
 	bool Load_Music_File_Into_Generator(std::string filename);
 
-	void Load_Wav_File_Into_Generator(std::string filename);
+	int Load_Wav_File_Into_Generator(std::string filename);
+
+	void Generate_Instrument_From_Wav(int wav_index);
 
 	void Generate_Music(int length = -1);
 };

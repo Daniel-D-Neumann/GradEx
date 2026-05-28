@@ -13,7 +13,8 @@ void WavWriter::WriteAudioToFile(std::vector<double> buffer)
 	//update how big the data chunk is
 	postDataPos = static_cast<int>(file.tellp());
 	std::cout << postDataPos - preDataPos << std::endl;
-	file.seekp(preDataPos-4);
+	int index = preDataPos - 4;
+	file.seekp(index);
 	writeToFile(postDataPos - preDataPos, 4);
 
 	//update how big the file is
@@ -65,7 +66,7 @@ std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 	if (wav_file.is_open())
 	{
 		//Read in all the relevant header data
-		WavHeader wav_data;
+		WavHeader wav_data{};
 		wav_file.read(reinterpret_cast<char*>(&wav_data), sizeof(WavHeader));
 
 		if (std::string(wav_data.wave, 4) != "WAVE" || std::string(wav_data.riff, 4) != "RIFF")
@@ -91,7 +92,7 @@ std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 			switch (wav_data.bits_per_sample)
 			{
 			case 8:
-				for (int i = 0; i < num_samples; i++)
+				for (int8_t i = 0; i < num_samples; i++)
 				{
 					//unsigned so -128 to get + & - vals
 					int8_t sample = (raw_data[i] - 128);
@@ -102,10 +103,11 @@ std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 				}
 				break;
 			case 16:
-				for (int i = 0; i < num_samples; i++)
+				for (int16_t i = 0; i < num_samples; i++)
 				{
 					//data twice as big so jump twice as far into data
-					int16_t sample = *reinterpret_cast<int16_t*>(&raw_data[i * 2]);
+					int index = i * 2;
+					int16_t sample = *reinterpret_cast<int16_t*>(&raw_data[index]);
 					float sample_float = static_cast<float>(sample);
 					sample_float *= norm_factor;
 					signal.push_back(sample_float);
@@ -115,7 +117,10 @@ std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 				for (int i = 0; i < num_samples; i++)
 				{
 					//No inherent 24 bit data type so shift the values into a 32 bit width
-					int32_t sample = (raw_data[i * 3] | (raw_data[i * 3 + 1] << 8) | (raw_data[i * 3 + 2] << 16));
+					int index_byte_1 = i * 3;
+					int index_byte_2 = i * 3 + 1;
+					int index_byte_3 = i * 3 + 2;
+					int32_t sample = (raw_data[index_byte_1] | (raw_data[index_byte_2] << 8) | (raw_data[index_byte_3] << 16));
 					//Then preserve the twos compliment bit
 					if (sample & 0x800000) sample |= ~0xFFFFFF;
 					float sample_float = static_cast<float>(sample);
@@ -124,9 +129,10 @@ std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 				}
 				break;
 			case 32:
-				for (int i = 0; i < num_samples; i++)
+				for (int32_t i = 0; i < num_samples; i++)
 				{
-					int32_t sample = *reinterpret_cast<int32_t*>(&raw_data[i * 4]);
+					int index = i * 4;
+					int32_t sample = *reinterpret_cast<int32_t*>(&raw_data[index]);
 					float sample_float = static_cast<float>(sample);
 					sample_float *= norm_factor;
 					signal.push_back(sample_float);
@@ -141,7 +147,8 @@ std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 		{
 			for (int i = 0; i < num_samples; i++)
 			{
-				signal.push_back(*reinterpret_cast<float*>(&raw_data[i * 4]));
+				int index = i * 4;
+				signal.push_back(*reinterpret_cast<float*>(&raw_data[index]));
 			}
 		}
 		else

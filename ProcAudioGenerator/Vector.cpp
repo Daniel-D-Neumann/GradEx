@@ -57,6 +57,11 @@ Vec2 operator*(const Vec2& lhs, const float rhs)
     return rhs * lhs;
 }
 
+Vec2 operator*(const Vec2& lhs, const double rhs)
+{
+    return Vec2(lhs.x * static_cast<float>(rhs), lhs.y * static_cast<float>(rhs));
+}
+
 Vec2 operator*(const Vec2& lhs, const Vec2& rhs)
 {
     return Vec2(lhs.x * rhs.x, lhs.y * rhs.y);

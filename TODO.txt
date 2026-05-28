@@ -21,4 +21,6 @@ Use Fourier transform to select the most influential frequencies (greatest amps)
 the most influential will be the base frequency
 then all others need to calculate their relative semitone change based on the base frequency
 
+TEST FOURIER CAN RECREATE GIVEN SOUND
+
 Cache instrument.sound so it doesn't have to be recalculated a lot

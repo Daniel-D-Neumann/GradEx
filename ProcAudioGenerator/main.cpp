@@ -91,7 +91,6 @@ int main()
 
 		soundGen->Load_Wav_File_Into_Generator("myWavFile.wav");
 
-		FourierTransformation FT;
 		InstrumentSerialser IS;
 
 	}

@@ -12,52 +12,16 @@ const std::string custom_file_path = "JsonInstruments/custom_instruments.json";
 
 class InstrumentSerialser
 {
-	void ReadInstruments(std::string filePath)
-	{
-		std::ifstream file(required_file_path);
-		json data = json::parse(file);
-
-		auto&  json_instruments = data["Instruments"];
-
-		for (const auto& instrument : json_instruments)
-		{
-			std::vector<FrequencyBreakdown> freqs;
-
-			for (const auto& frequency_data : instrument)
-			{
-				FrequencyBreakdown freq_brk;
-				freq_brk.osc.is_FM = frequency_data["osc"]["is_FM"];
-				freq_brk.osc.oscillator_type = frequency_data["osc"]["oscillator_type"];
-				freq_brk.osc.LFO_hertz = frequency_data["osc"]["LFO_hertz"];
-				freq_brk.osc.LFO_amp = frequency_data["osc"]["LFO_amp"];
-				freq_brk.amp = frequency_data["amp"];
-				freq_brk.relative_semitones = frequency_data["relative_semitones"];
-				freqs.push_back(freq_brk);
-			}
-			instruments.push_back(freqs);
-		}
-	}
-
+	void ReadInstruments(const std::string& filePath, std::vector<std::vector<FrequencyBreakdown>>* instrument_vec);
 	std::vector<std::vector<FrequencyBreakdown>> instruments;
+	std::vector<std::vector<FrequencyBreakdown>> custom_instruments;
 public:
 
-	InstrumentSerialser()
-	{
-		ReadInstruments(required_file_path);
-		ReadInstruments(custom_file_path);
-	}
+	InstrumentSerialser();
 
-	std::vector<FrequencyBreakdown>* SaveInstrument(std::vector<FrequencyBreakdown>& constituent_frequencies)
-	{
+	FrequencyBreakdown WaveDataToFrequencyBreakdown(const WaveData& wave, const double base_frequency);
 
-
-
-
-		//push back newly created instrument
-		instruments.push_back(constituent_frequencies);
-
-		return &instruments.back();
-	}
+	std::vector<FrequencyBreakdown>* SaveInstrument(const std::vector<FrequencyBreakdown>& constituent_frequencies);
 
 
 };
