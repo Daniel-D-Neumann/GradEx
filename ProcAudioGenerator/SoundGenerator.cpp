@@ -455,7 +455,9 @@ bool SoundGenerator::Load_Music_File_Into_Generator(std::string filename)
 
 void SoundGenerator::Load_Wav_File_Into_Generator(std::string filename)
 {
-	loadedWavs.push_back(wav_output->ReadWavFile(filename));
+	//loadedWavs.push_back();
+	wav_output->WriteAudioToFile(wav_output->ReadWavFile(filename));
+
 }
 
 bool SoundGenerator::Get_File_Instrument(std::string filename, File_Type file_type, std::vector<int>& instruments)

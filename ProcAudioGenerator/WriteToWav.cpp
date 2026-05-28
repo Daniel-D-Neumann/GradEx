@@ -1,7 +1,7 @@
 #include "WriteToWav.h"
 #include <string>
 
-
+//PCM 16 bit
 void WavWriter::WriteAudioToFile(std::vector<double> buffer)
 {
 	for (double sample : buffer)
@@ -56,11 +56,11 @@ void WavWriter::setupWavFile(const char* filename)
 	preDataPos = static_cast<int>(file.tellp());
 }
 
-std::vector<float> WavWriter::ReadWavFile(std::string filepath)
+std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 {
-	std::vector<float> signal;
+	std::vector<double> signal;
 
-	std::ifstream wav_file(filepath, std::ifstream::in, std::ios::binary);
+	std::ifstream wav_file(filepath, std::ios::binary);
 
 	if (wav_file.is_open())
 	{
@@ -75,20 +75,19 @@ std::vector<float> WavWriter::ReadWavFile(std::string filepath)
 			return signal;
 		}
 		
-		std::cout << wav_data.data_chunk_size << std::endl;
-
 		//Read all data as bytes from data chunk
-		std::vector<uint8_t> raw_data(wav_data.data_chunk_size);
+		std::vector<uint8_t> raw_data;
+		raw_data.resize(wav_data.data_chunk_size);
+
 		wav_file.read(reinterpret_cast<char*>(raw_data.data()), wav_data.data_chunk_size);
 		
-
 		int num_samples = wav_data.data_chunk_size / (wav_data.bits_per_sample / 8);
 		signal.reserve(num_samples);
 
 		if (wav_data.audio_format == WAV_FORMAT_PCM)
 		{
 			//used to normalise value between -1 and 1
-			float norm_factor = 1.0f / powf(2,wav_data.bits_per_sample-1)-1;
+			float norm_factor = 1.0f / (powf(2.0f,wav_data.bits_per_sample-1.0f)-1.0f);
 			switch (wav_data.bits_per_sample)
 			{
 			case 8:
@@ -127,7 +126,7 @@ std::vector<float> WavWriter::ReadWavFile(std::string filepath)
 			case 32:
 				for (int i = 0; i < num_samples; i++)
 				{
-					int32_t sample = reinterpret_cast<int32_t>(&raw_data[i * 4]);
+					int32_t sample = *reinterpret_cast<int32_t*>(&raw_data[i * 4]);
 					float sample_float = static_cast<float>(sample);
 					sample_float *= norm_factor;
 					signal.push_back(sample_float);

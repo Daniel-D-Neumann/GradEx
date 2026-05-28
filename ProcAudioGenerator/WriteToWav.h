@@ -21,7 +21,7 @@ struct WavHeader
     uint16_t bits_per_sample;
 
     char data_chunk_ID[4];
-    uint16_t data_chunk_size;
+    uint32_t data_chunk_size;
 };
 
 class WavWriter{
@@ -30,7 +30,7 @@ public:
 
     ~WavWriter() { file.close(); }
     void WriteAudioToFile(std::vector<double> buffer);
-    std::vector<float> ReadWavFile(std::string filepath);
+    std::vector<double> ReadWavFile(std::string filepath);
 
 private:
     const int sampleRate;
