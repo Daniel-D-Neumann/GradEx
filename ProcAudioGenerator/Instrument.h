@@ -27,7 +27,13 @@ struct FrequencyBreakdown
 
 static void to_json(json& j, const FrequencyBreakdown& f)
 {
-	j = json{ {"osc", {"is_FM", f.osc.is_FM }, {"oscillator_type", f.osc.oscillator_type}, {"LFO_hertz", f.osc.LFO_hertz}, {"LFO_amp", f.osc.LFO_amp}}, {"amp", f.amp}, {"phase", f.phase}, {"relative_semitones", f.relative_semitones} };
+	j["osc"]["is_FM"] = f.osc.is_FM; 
+	j["osc"]["oscillator_type"] = f.osc.oscillator_type;
+	j["osc"]["LFO_hertz"] = f.osc.LFO_hertz;
+	j["osc"]["LFO_amp"] = f.osc.LFO_amp;
+	j["amp"] = f.amp;
+	j["phase"] = f.phase;
+	j["relative_semitones"] = f.relative_semitones;
 }
 static void from_json(json& j, FrequencyBreakdown& f)
 {

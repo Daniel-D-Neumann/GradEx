@@ -2,10 +2,10 @@
 
 void InstrumentSerialser::ReadInstruments(const std::string& filePath, std::vector<std::vector<FrequencyBreakdown>>* instrument_vec)
 {
-	std::ifstream file(required_file_path);
+	std::ifstream file(filePath);
 	json data = json::parse(file);
 
-	auto& json_instruments = data["Instruments"];
+	auto& json_instruments = data;
 
 	for (const auto& instrument : json_instruments)
 	{
@@ -14,13 +14,13 @@ void InstrumentSerialser::ReadInstruments(const std::string& filePath, std::vect
 		for (const auto& frequency_data : instrument)
 		{
 			FrequencyBreakdown freq_brk;
-			freq_brk.osc.is_FM = frequency_data["osc"]["is_FM"];
-			freq_brk.osc.oscillator_type = frequency_data["osc"]["oscillator_type"];
-			freq_brk.osc.LFO_hertz = frequency_data["osc"]["LFO_hertz"];
-			freq_brk.osc.LFO_amp = frequency_data["osc"]["LFO_amp"];
-			freq_brk.amp = frequency_data["amp"];
-			freq_brk.phase = frequency_data["phase"];
-			freq_brk.relative_semitones = frequency_data["relative_semitones"];
+			freq_brk.osc.is_FM = (frequency_data["osc"]["is_FM"]);
+			freq_brk.osc.oscillator_type = frequency_data["osc"]["oscillator_type"].get<OscillatorTypes>();
+			freq_brk.osc.LFO_hertz = frequency_data["osc"]["LFO_hertz"].get<double>();
+			freq_brk.osc.LFO_amp = frequency_data["osc"]["LFO_amp"].get<double>();
+			freq_brk.amp = frequency_data["amp"].get<double>();
+			freq_brk.phase = frequency_data["phase"].get<double>();
+			freq_brk.relative_semitones = frequency_data["relative_semitones"].get<double>();
 			freqs.push_back(freq_brk);
 		}
 		instrument_vec->push_back(freqs);
@@ -30,7 +30,7 @@ void InstrumentSerialser::ReadInstruments(const std::string& filePath, std::vect
 
 InstrumentSerialser::InstrumentSerialser()
 {
-	ReadInstruments(required_file_path, &instruments);
+	//ReadInstruments(required_file_path, &instruments);
 	ReadInstruments(custom_file_path, &custom_instruments);
 }
 
@@ -58,11 +58,11 @@ std::vector<FrequencyBreakdown>* InstrumentSerialser::SaveInstrument(const std::
 	//push back newly created instrument
 	custom_instruments.push_back(constituent_frequencies);
 
-	data["Instruments"] = custom_instruments;
+	data = custom_instruments;
 
-	std::string s = data.dump(4);
+	std::string s = data.dump(1);
 
 	file << s;
 
-	return &instruments.back();
+	return &custom_instruments.back();
 }

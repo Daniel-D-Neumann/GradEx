@@ -93,7 +93,7 @@ int main()
 
 		soundGen->Generate_Instrument_From_Wav(0);
 
-		InstrumentSerialser IS;
+		//InstrumentSerialser IS;
 
 	}
 }

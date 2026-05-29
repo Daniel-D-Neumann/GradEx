@@ -1,0 +1,4410 @@
+[
+ [
+  {
+   "amp": 0.014276329427957535,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3492422103881836,
+   "relative_semitones": 0.0
+  },
+  {
+   "amp": 0.012282222509384155,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.22843861579895,
+   "relative_semitones": 0.006618410542756493
+  },
+  {
+   "amp": 0.011789907701313496,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.400296688079834,
+   "relative_semitones": -2.04241017163895
+  },
+  {
+   "amp": 0.011547690257430077,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.198936700820923,
+   "relative_semitones": 1.9690767334037707
+  },
+  {
+   "amp": 0.011406928300857544,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.943741500377655,
+   "relative_semitones": 1.9631661335318757
+  },
+  {
+   "amp": 0.011263142339885235,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.36696240305900574,
+   "relative_semitones": 5.174658372520752
+  },
+  {
+   "amp": 0.011240342631936073,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0977163314819336,
+   "relative_semitones": -9.043346791018616
+  },
+  {
+   "amp": 0.011088607832789421,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5061092376708984,
+   "relative_semitones": -5.035707976326276
+  },
+  {
+   "amp": 0.011045270599424839,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.7376692891120911,
+   "relative_semitones": -2.034963214222364
+  },
+  {
+   "amp": 0.011021800339221954,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.7145400047302246,
+   "relative_semitones": 5.179567050403128
+  },
+  {
+   "amp": 0.010606599040329456,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6710737943649292,
+   "relative_semitones": -2.049862335314832
+  },
+  {
+   "amp": 0.010561881586909294,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.0335135459899902,
+   "relative_semitones": 1.9749837296766342
+  },
+  {
+   "amp": 0.01044509932398796,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.7799403667449951,
+   "relative_semitones": -1.8277147144630288
+  },
+  {
+   "amp": 0.010413767769932747,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.029813237488269806,
+   "relative_semitones": -9.03218805616183
+  },
+  {
+   "amp": 0.010205449536442757,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.5318803787231445,
+   "relative_semitones": 5.1844756548045865
+  },
+  {
+   "amp": 0.010203050449490547,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6582948565483093,
+   "relative_semitones": -5.02685460011742
+  },
+  {
+   "amp": 0.01016922201961279,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.3362553119659424,
+   "relative_semitones": -1.82035951919296
+  },
+  {
+   "amp": 0.010064373724162579,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.759690523147583,
+   "relative_semitones": 5.169746983420196
+  },
+  {
+   "amp": 0.009992542676627636,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.11100471019744873,
+   "relative_semitones": -9.054512722919489
+  },
+  {
+   "amp": 0.009813440032303333,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5914885401725769,
+   "relative_semitones": -5.04456588238923
+  },
+  {
+   "amp": 0.009709369391202927,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5331022143363953,
+   "relative_semitones": -0.006620941691610628
+  },
+  {
+   "amp": 0.009579827077686787,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.943068027496338,
+   "relative_semitones": 0.02646202527894554
+  },
+  {
+   "amp": 0.009552898816764355,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5105624198913574,
+   "relative_semitones": -2.027517459793304
+  },
+  {
+   "amp": 0.009348099119961262,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.9720399379730225,
+   "relative_semitones": 1.9808902969720086
+  },
+  {
+   "amp": 0.00930290948599577,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.5138514041900635,
+   "relative_semitones": 5.18938155031388
+  },
+  {
+   "amp": 0.00921238586306572,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.1345434188842773,
+   "relative_semitones": 1.957255103012471
+  },
+  {
+   "amp": 0.00918809324502945,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.2858375608921051,
+   "relative_semitones": -0.02650253458369484
+  },
+  {
+   "amp": 0.008895272389054298,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.73772132396698,
+   "relative_semitones": -1.813007447470744
+  },
+  {
+   "amp": 0.008869902230799198,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.43965744972229,
+   "relative_semitones": -1.8350750128058728
+  },
+  {
+   "amp": 0.008646088652312756,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.541437864303589,
+   "relative_semitones": -5.018006937072116
+  },
+  {
+   "amp": 0.008499380201101303,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0150973796844482,
+   "relative_semitones": -9.021038006050194
+  },
+  {
+   "amp": 0.00831513199955225,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5324598550796509,
+   "relative_semitones": 6.973145399882571
+  },
+  {
+   "amp": 0.008130273781716824,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.47581884264945984,
+   "relative_semitones": -2.0200769043928544
+  },
+  {
+   "amp": 0.008097616955637932,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.632291316986084,
+   "relative_semitones": -0.0198722063615687
+  },
+  {
+   "amp": 0.007721278350800276,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.3008825778961182,
+   "relative_semitones": 1.9867932645012782
+  },
+  {
+   "amp": 0.007535683922469616,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2677462100982666,
+   "relative_semitones": 0.03307032919454071
+  },
+  {
+   "amp": 0.007517659105360508,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.5397570133209229,
+   "relative_semitones": -1.805656523131015
+  },
+  {
+   "amp": 0.007488560397177935,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.11954665184021,
+   "relative_semitones": 11.999999999999991
+  },
+  {
+   "amp": 0.0074765258468687534,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.7969993948936462,
+   "relative_semitones": 5.1942873731722345
+  },
+  {
+   "amp": 0.007430859841406345,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.021127939224243,
+   "relative_semitones": 12.003310410398473
+  },
+  {
+   "amp": 0.007393436972051859,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5404367446899414,
+   "relative_semitones": -2.05731570577391
+  },
+  {
+   "amp": 0.007329106796532869,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.4373328983783722,
+   "relative_semitones": -5.009162606079767
+  },
+  {
+   "amp": 0.007151613477617502,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6733724474906921,
+   "relative_semitones": -7.0526840756427385
+  },
+  {
+   "amp": 0.00704862829297781,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.102219820022583,
+   "relative_semitones": 6.968718683294635
+  },
+  {
+   "amp": 0.007040246389806271,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.21105854213237762,
+   "relative_semitones": -7.0626368080341955
+  },
+  {
+   "amp": 0.006947006564587355,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.9492154121398926,
+   "relative_semitones": 6.977569796617223
+  },
+  {
+   "amp": 0.006853442173451185,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.6957015991210938,
+   "relative_semitones": -6.933698110663262
+  },
+  {
+   "amp": 0.006841647904366255,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0232338905334473,
+   "relative_semitones": -9.065685861154194
+  },
+  {
+   "amp": 0.0067431749776005745,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.3243446946144104,
+   "relative_semitones": -9.009893636520804
+  },
+  {
+   "amp": 0.006709286943078041,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.1147642135620117,
+   "relative_semitones": -7.042737061713813
+  },
+  {
+   "amp": 0.006523740477859974,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 3.1131937503814697,
+   "relative_semitones": -6.923819207725092
+  },
+  {
+   "amp": 0.006514637265354395,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.42811423540115356,
+   "relative_semitones": 5.164835520006907
+  },
+  {
+   "amp": 0.006481348071247339,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.21342489123344421,
+   "relative_semitones": 11.996688956474353
+  },
+  {
+   "amp": 0.0064596314914524555,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.814669132232666,
+   "relative_semitones": -2.0126395454453743
+  },
+  {
+   "amp": 0.006421648431569338,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.251331329345703,
+   "relative_semitones": -6.943582653996898
+  },
+  {
+   "amp": 0.006389685440808535,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5287423133850098,
+   "relative_semitones": -5.053428322944078
+  },
+  {
+   "amp": 0.006388214882463217,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.23921097815036774,
+   "relative_semitones": -7.072593927838156
+  },
+  {
+   "amp": 0.006349826231598854,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.929161310195923,
+   "relative_semitones": 12.006618410542746
+  },
+  {
+   "amp": 0.006328510120511055,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.2119405269622803,
+   "relative_semitones": 0.019849421929147557
+  },
+  {
+   "amp": 0.00620714295655489,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.3930976390838623,
+   "relative_semitones": 6.95100405946922
+  },
+  {
+   "amp": 0.006046637427061796,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.4619674682617188,
+   "relative_semitones": -1.7983106913895608
+  },
+  {
+   "amp": 0.0059433081187307835,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.8998069763183594,
+   "relative_semitones": -5.000322791071355
+  },
+  {
+   "amp": 0.005933247972279787,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.43449363112449646,
+   "relative_semitones": 6.9554341176107615
+  },
+  {
+   "amp": 0.005917901173233986,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.5440032482147217,
+   "relative_semitones": -7.032795759679972
+  },
+  {
+   "amp": 0.00582932261750102,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.829163908958435,
+   "relative_semitones": -6.9534728441704905
+  },
+  {
+   "amp": 0.005751756485551596,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.6719532012939453,
+   "relative_semitones": -6.913945938748929
+  },
+  {
+   "amp": 0.0057045044377446175,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.731041193008423,
+   "relative_semitones": 0.013236068561244834
+  },
+  {
+   "amp": 0.005702008027583361,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.6721816062927246,
+   "relative_semitones": -1.8424364639814779
+  },
+  {
+   "amp": 0.005595251452177763,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.918977737426758,
+   "relative_semitones": 7.008512512562552
+  },
+  {
+   "amp": 0.005532705225050449,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.6629024744033813,
+   "relative_semitones": 1.992694219988961
+  },
+  {
+   "amp": 0.005502699408680201,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.705599069595337,
+   "relative_semitones": 14.180490957392802
+  },
+  {
+   "amp": 0.005481773521751165,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.6878405213356018,
+   "relative_semitones": -7.082558116132288
+  },
+  {
+   "amp": 0.005432620644569397,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.4621189832687378,
+   "relative_semitones": -0.03313362162510112
+  },
+  {
+   "amp": 0.005419502966105938,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.8171732425689697,
+   "relative_semitones": 10.970296325931438
+  },
+  {
+   "amp": 0.005387488752603531,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.9021358489990234,
+   "relative_semitones": 7.012927881142912
+  },
+  {
+   "amp": 0.005363840144127607,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.4119365215301514,
+   "relative_semitones": 10.973807699111221
+  },
+  {
+   "amp": 0.005352403502911329,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3447253704071045,
+   "relative_semitones": 7.004094831167319
+  },
+  {
+   "amp": 0.00525420717895031,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.0298917293548584,
+   "relative_semitones": 1.9513420535738994
+  },
+  {
+   "amp": 0.00521488580852747,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5122357606887817,
+   "relative_semitones": 14.177573347521205
+  },
+  {
+   "amp": 0.00518118217587471,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.3635709285736084,
+   "relative_semitones": 14.183409643017288
+  },
+  {
+   "amp": 0.0051411050371825695,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.608285427093506,
+   "relative_semitones": -8.998756436275048
+  },
+  {
+   "amp": 0.005140391178429127,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2269585132598877,
+   "relative_semitones": 10.966782353018434
+  },
+  {
+   "amp": 0.005105842370539904,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.8750299215316772,
+   "relative_semitones": 5.001953244876638
+  },
+  {
+   "amp": 0.005071353632956743,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 3.0831003189086914,
+   "relative_semitones": 0.07267080969411675
+  },
+  {
+   "amp": 0.00497275497764349,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2298460006713867,
+   "relative_semitones": -6.904079621984014
+  },
+  {
+   "amp": 0.004912021569907665,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.7234166860580444,
+   "relative_semitones": 11.99337905830838
+  },
+  {
+   "amp": 0.0048520262353122234,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3921401500701904,
+   "relative_semitones": 9.000439777022235
+  },
+  {
+   "amp": 0.004821473732590675,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.0718313455581665,
+   "relative_semitones": 7.017343309424357
+  },
+  {
+   "amp": 0.004818136338144541,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.8287264108657837,
+   "relative_semitones": 9.00437531245649
+  },
+  {
+   "amp": 0.0048092738725245,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.8954477310180664,
+   "relative_semitones": 5.00691112895847
+  },
+  {
+   "amp": 0.004808769561350346,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.099623441696167,
+   "relative_semitones": 5.19919048946091
+  },
+  {
+   "amp": 0.00479805376380682,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.4057912826538086,
+   "relative_semitones": 12.009927555752718
+  },
+  {
+   "amp": 0.004768888466060162,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6451619863510132,
+   "relative_semitones": 10.977320246488267
+  },
+  {
+   "amp": 0.004734181333333254,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.20780034363269806,
+   "relative_semitones": 4.996992608293159
+  },
+  {
+   "amp": 0.0047150105237960815,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3879742622375488,
+   "relative_semitones": -6.963367358423533
+  },
+  {
+   "amp": 0.004668216221034527,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.6084586381912231,
+   "relative_semitones": 6.999677208928636
+  },
+  {
+   "amp": 0.0046538859605789185,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.9751396179199219,
+   "relative_semitones": -7.022860162985071
+  },
+  {
+   "amp": 0.004631045740097761,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.2154667377471924,
+   "relative_semitones": 6.9819930629278755
+  },
+  {
+   "amp": 0.004624929279088974,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.9583179354667664,
+   "relative_semitones": 8.99650334673722
+  },
+  {
+   "amp": 0.004577686078846455,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.8090598583221436,
+   "relative_semitones": 5.011867593614816
+  }
+ ],
+ [
+  {
+   "amp": 0.014276329427957535,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3492422103881836,
+   "relative_semitones": 0.0
+  },
+  {
+   "amp": 0.012282222509384155,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.22843861579895,
+   "relative_semitones": 0.006618410542756493
+  },
+  {
+   "amp": 0.011789907701313496,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.400296688079834,
+   "relative_semitones": -2.04241017163895
+  },
+  {
+   "amp": 0.011547690257430077,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.198936700820923,
+   "relative_semitones": 1.9690767334037707
+  },
+  {
+   "amp": 0.011406928300857544,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.943741500377655,
+   "relative_semitones": 1.9631661335318757
+  },
+  {
+   "amp": 0.011263142339885235,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.36696240305900574,
+   "relative_semitones": 5.174658372520752
+  },
+  {
+   "amp": 0.011240342631936073,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0977163314819336,
+   "relative_semitones": -9.043346791018616
+  },
+  {
+   "amp": 0.011088607832789421,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5061092376708984,
+   "relative_semitones": -5.035707976326276
+  },
+  {
+   "amp": 0.011045270599424839,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.7376692891120911,
+   "relative_semitones": -2.034963214222364
+  },
+  {
+   "amp": 0.011021800339221954,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.7145400047302246,
+   "relative_semitones": 5.179567050403128
+  },
+  {
+   "amp": 0.010606599040329456,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6710737943649292,
+   "relative_semitones": -2.049862335314832
+  },
+  {
+   "amp": 0.010561881586909294,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.0335135459899902,
+   "relative_semitones": 1.9749837296766342
+  },
+  {
+   "amp": 0.01044509932398796,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.7799403667449951,
+   "relative_semitones": -1.8277147144630288
+  },
+  {
+   "amp": 0.010413767769932747,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.029813237488269806,
+   "relative_semitones": -9.03218805616183
+  },
+  {
+   "amp": 0.010205449536442757,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.5318803787231445,
+   "relative_semitones": 5.1844756548045865
+  },
+  {
+   "amp": 0.010203050449490547,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6582948565483093,
+   "relative_semitones": -5.02685460011742
+  },
+  {
+   "amp": 0.01016922201961279,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.3362553119659424,
+   "relative_semitones": -1.82035951919296
+  },
+  {
+   "amp": 0.010064373724162579,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.759690523147583,
+   "relative_semitones": 5.169746983420196
+  },
+  {
+   "amp": 0.009992542676627636,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.11100471019744873,
+   "relative_semitones": -9.054512722919489
+  },
+  {
+   "amp": 0.009813440032303333,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5914885401725769,
+   "relative_semitones": -5.04456588238923
+  },
+  {
+   "amp": 0.009709369391202927,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5331022143363953,
+   "relative_semitones": -0.006620941691610628
+  },
+  {
+   "amp": 0.009579827077686787,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.943068027496338,
+   "relative_semitones": 0.02646202527894554
+  },
+  {
+   "amp": 0.009552898816764355,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5105624198913574,
+   "relative_semitones": -2.027517459793304
+  },
+  {
+   "amp": 0.009348099119961262,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.9720399379730225,
+   "relative_semitones": 1.9808902969720086
+  },
+  {
+   "amp": 0.00930290948599577,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.5138514041900635,
+   "relative_semitones": 5.18938155031388
+  },
+  {
+   "amp": 0.00921238586306572,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.1345434188842773,
+   "relative_semitones": 1.957255103012471
+  },
+  {
+   "amp": 0.00918809324502945,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.2858375608921051,
+   "relative_semitones": -0.02650253458369484
+  },
+  {
+   "amp": 0.008895272389054298,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.73772132396698,
+   "relative_semitones": -1.813007447470744
+  },
+  {
+   "amp": 0.008869902230799198,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.43965744972229,
+   "relative_semitones": -1.8350750128058728
+  },
+  {
+   "amp": 0.008646088652312756,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.541437864303589,
+   "relative_semitones": -5.018006937072116
+  },
+  {
+   "amp": 0.008499380201101303,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0150973796844482,
+   "relative_semitones": -9.021038006050194
+  },
+  {
+   "amp": 0.00831513199955225,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5324598550796509,
+   "relative_semitones": 6.973145399882571
+  },
+  {
+   "amp": 0.008130273781716824,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.47581884264945984,
+   "relative_semitones": -2.0200769043928544
+  },
+  {
+   "amp": 0.008097616955637932,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.632291316986084,
+   "relative_semitones": -0.0198722063615687
+  },
+  {
+   "amp": 0.007721278350800276,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.3008825778961182,
+   "relative_semitones": 1.9867932645012782
+  },
+  {
+   "amp": 0.007535683922469616,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2677462100982666,
+   "relative_semitones": 0.03307032919454071
+  },
+  {
+   "amp": 0.007517659105360508,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.5397570133209229,
+   "relative_semitones": -1.805656523131015
+  },
+  {
+   "amp": 0.007488560397177935,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.11954665184021,
+   "relative_semitones": 11.999999999999991
+  },
+  {
+   "amp": 0.0074765258468687534,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.7969993948936462,
+   "relative_semitones": 5.1942873731722345
+  },
+  {
+   "amp": 0.007430859841406345,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.021127939224243,
+   "relative_semitones": 12.003310410398473
+  },
+  {
+   "amp": 0.007393436972051859,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5404367446899414,
+   "relative_semitones": -2.05731570577391
+  },
+  {
+   "amp": 0.007329106796532869,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.4373328983783722,
+   "relative_semitones": -5.009162606079767
+  },
+  {
+   "amp": 0.007151613477617502,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6733724474906921,
+   "relative_semitones": -7.0526840756427385
+  },
+  {
+   "amp": 0.00704862829297781,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.102219820022583,
+   "relative_semitones": 6.968718683294635
+  },
+  {
+   "amp": 0.007040246389806271,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.21105854213237762,
+   "relative_semitones": -7.0626368080341955
+  },
+  {
+   "amp": 0.006947006564587355,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.9492154121398926,
+   "relative_semitones": 6.977569796617223
+  },
+  {
+   "amp": 0.006853442173451185,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.6957015991210938,
+   "relative_semitones": -6.933698110663262
+  },
+  {
+   "amp": 0.006841647904366255,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0232338905334473,
+   "relative_semitones": -9.065685861154194
+  },
+  {
+   "amp": 0.0067431749776005745,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.3243446946144104,
+   "relative_semitones": -9.009893636520804
+  },
+  {
+   "amp": 0.006709286943078041,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.1147642135620117,
+   "relative_semitones": -7.042737061713813
+  },
+  {
+   "amp": 0.006523740477859974,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 3.1131937503814697,
+   "relative_semitones": -6.923819207725092
+  },
+  {
+   "amp": 0.006514637265354395,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.42811423540115356,
+   "relative_semitones": 5.164835520006907
+  },
+  {
+   "amp": 0.006481348071247339,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.21342489123344421,
+   "relative_semitones": 11.996688956474353
+  },
+  {
+   "amp": 0.0064596314914524555,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.814669132232666,
+   "relative_semitones": -2.0126395454453743
+  },
+  {
+   "amp": 0.006421648431569338,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.251331329345703,
+   "relative_semitones": -6.943582653996898
+  },
+  {
+   "amp": 0.006389685440808535,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5287423133850098,
+   "relative_semitones": -5.053428322944078
+  },
+  {
+   "amp": 0.006388214882463217,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.23921097815036774,
+   "relative_semitones": -7.072593927838156
+  },
+  {
+   "amp": 0.006349826231598854,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.929161310195923,
+   "relative_semitones": 12.006618410542746
+  },
+  {
+   "amp": 0.006328510120511055,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.2119405269622803,
+   "relative_semitones": 0.019849421929147557
+  },
+  {
+   "amp": 0.00620714295655489,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.3930976390838623,
+   "relative_semitones": 6.95100405946922
+  },
+  {
+   "amp": 0.006046637427061796,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.4619674682617188,
+   "relative_semitones": -1.7983106913895608
+  },
+  {
+   "amp": 0.0059433081187307835,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.8998069763183594,
+   "relative_semitones": -5.000322791071355
+  },
+  {
+   "amp": 0.005933247972279787,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.43449363112449646,
+   "relative_semitones": 6.9554341176107615
+  },
+  {
+   "amp": 0.005917901173233986,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.5440032482147217,
+   "relative_semitones": -7.032795759679972
+  },
+  {
+   "amp": 0.00582932261750102,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.829163908958435,
+   "relative_semitones": -6.9534728441704905
+  },
+  {
+   "amp": 0.005751756485551596,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.6719532012939453,
+   "relative_semitones": -6.913945938748929
+  },
+  {
+   "amp": 0.0057045044377446175,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.731041193008423,
+   "relative_semitones": 0.013236068561244834
+  },
+  {
+   "amp": 0.005702008027583361,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.6721816062927246,
+   "relative_semitones": -1.8424364639814779
+  },
+  {
+   "amp": 0.005595251452177763,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.918977737426758,
+   "relative_semitones": 7.008512512562552
+  },
+  {
+   "amp": 0.005532705225050449,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.6629024744033813,
+   "relative_semitones": 1.992694219988961
+  },
+  {
+   "amp": 0.005502699408680201,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.705599069595337,
+   "relative_semitones": 14.180490957392802
+  },
+  {
+   "amp": 0.005481773521751165,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.6878405213356018,
+   "relative_semitones": -7.082558116132288
+  },
+  {
+   "amp": 0.005432620644569397,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.4621189832687378,
+   "relative_semitones": -0.03313362162510112
+  },
+  {
+   "amp": 0.005419502966105938,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.8171732425689697,
+   "relative_semitones": 10.970296325931438
+  },
+  {
+   "amp": 0.005387488752603531,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.9021358489990234,
+   "relative_semitones": 7.012927881142912
+  },
+  {
+   "amp": 0.005363840144127607,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.4119365215301514,
+   "relative_semitones": 10.973807699111221
+  },
+  {
+   "amp": 0.005352403502911329,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3447253704071045,
+   "relative_semitones": 7.004094831167319
+  },
+  {
+   "amp": 0.00525420717895031,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.0298917293548584,
+   "relative_semitones": 1.9513420535738994
+  },
+  {
+   "amp": 0.00521488580852747,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5122357606887817,
+   "relative_semitones": 14.177573347521205
+  },
+  {
+   "amp": 0.00518118217587471,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.3635709285736084,
+   "relative_semitones": 14.183409643017288
+  },
+  {
+   "amp": 0.0051411050371825695,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.608285427093506,
+   "relative_semitones": -8.998756436275048
+  },
+  {
+   "amp": 0.005140391178429127,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2269585132598877,
+   "relative_semitones": 10.966782353018434
+  },
+  {
+   "amp": 0.005105842370539904,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.8750299215316772,
+   "relative_semitones": 5.001953244876638
+  },
+  {
+   "amp": 0.005071353632956743,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 3.0831003189086914,
+   "relative_semitones": 0.07267080969411675
+  },
+  {
+   "amp": 0.00497275497764349,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2298460006713867,
+   "relative_semitones": -6.904079621984014
+  },
+  {
+   "amp": 0.004912021569907665,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.7234166860580444,
+   "relative_semitones": 11.99337905830838
+  },
+  {
+   "amp": 0.0048520262353122234,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3921401500701904,
+   "relative_semitones": 9.000439777022235
+  },
+  {
+   "amp": 0.004821473732590675,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.0718313455581665,
+   "relative_semitones": 7.017343309424357
+  },
+  {
+   "amp": 0.004818136338144541,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.8287264108657837,
+   "relative_semitones": 9.00437531245649
+  },
+  {
+   "amp": 0.0048092738725245,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.8954477310180664,
+   "relative_semitones": 5.00691112895847
+  },
+  {
+   "amp": 0.004808769561350346,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.099623441696167,
+   "relative_semitones": 5.19919048946091
+  },
+  {
+   "amp": 0.00479805376380682,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.4057912826538086,
+   "relative_semitones": 12.009927555752718
+  },
+  {
+   "amp": 0.004768888466060162,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6451619863510132,
+   "relative_semitones": 10.977320246488267
+  },
+  {
+   "amp": 0.004734181333333254,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.20780034363269806,
+   "relative_semitones": 4.996992608293159
+  },
+  {
+   "amp": 0.0047150105237960815,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3879742622375488,
+   "relative_semitones": -6.963367358423533
+  },
+  {
+   "amp": 0.004668216221034527,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.6084586381912231,
+   "relative_semitones": 6.999677208928636
+  },
+  {
+   "amp": 0.0046538859605789185,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.9751396179199219,
+   "relative_semitones": -7.022860162985071
+  },
+  {
+   "amp": 0.004631045740097761,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.2154667377471924,
+   "relative_semitones": 6.9819930629278755
+  },
+  {
+   "amp": 0.004624929279088974,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.9583179354667664,
+   "relative_semitones": 8.99650334673722
+  },
+  {
+   "amp": 0.004577686078846455,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.8090598583221436,
+   "relative_semitones": 5.011867593614816
+  }
+ ],
+ [
+  {
+   "amp": 0.014276329427957535,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3492422103881836,
+   "relative_semitones": 0.0
+  },
+  {
+   "amp": 0.012282222509384155,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.22843861579895,
+   "relative_semitones": 0.006618410542756493
+  },
+  {
+   "amp": 0.011789907701313496,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.400296688079834,
+   "relative_semitones": -2.04241017163895
+  },
+  {
+   "amp": 0.011547690257430077,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.198936700820923,
+   "relative_semitones": 1.9690767334037707
+  },
+  {
+   "amp": 0.011406928300857544,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.943741500377655,
+   "relative_semitones": 1.9631661335318757
+  },
+  {
+   "amp": 0.011263142339885235,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.36696240305900574,
+   "relative_semitones": 5.174658372520752
+  },
+  {
+   "amp": 0.011240342631936073,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0977163314819336,
+   "relative_semitones": -9.043346791018616
+  },
+  {
+   "amp": 0.011088607832789421,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5061092376708984,
+   "relative_semitones": -5.035707976326276
+  },
+  {
+   "amp": 0.011045270599424839,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.7376692891120911,
+   "relative_semitones": -2.034963214222364
+  },
+  {
+   "amp": 0.011021800339221954,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.7145400047302246,
+   "relative_semitones": 5.179567050403128
+  },
+  {
+   "amp": 0.010606599040329456,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6710737943649292,
+   "relative_semitones": -2.049862335314832
+  },
+  {
+   "amp": 0.010561881586909294,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.0335135459899902,
+   "relative_semitones": 1.9749837296766342
+  },
+  {
+   "amp": 0.01044509932398796,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.7799403667449951,
+   "relative_semitones": -1.8277147144630288
+  },
+  {
+   "amp": 0.010413767769932747,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.029813237488269806,
+   "relative_semitones": -9.03218805616183
+  },
+  {
+   "amp": 0.010205449536442757,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.5318803787231445,
+   "relative_semitones": 5.1844756548045865
+  },
+  {
+   "amp": 0.010203050449490547,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6582948565483093,
+   "relative_semitones": -5.02685460011742
+  },
+  {
+   "amp": 0.01016922201961279,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.3362553119659424,
+   "relative_semitones": -1.82035951919296
+  },
+  {
+   "amp": 0.010064373724162579,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.759690523147583,
+   "relative_semitones": 5.169746983420196
+  },
+  {
+   "amp": 0.009992542676627636,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.11100471019744873,
+   "relative_semitones": -9.054512722919489
+  },
+  {
+   "amp": 0.009813440032303333,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5914885401725769,
+   "relative_semitones": -5.04456588238923
+  },
+  {
+   "amp": 0.009709369391202927,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5331022143363953,
+   "relative_semitones": -0.006620941691610628
+  },
+  {
+   "amp": 0.009579827077686787,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.943068027496338,
+   "relative_semitones": 0.02646202527894554
+  },
+  {
+   "amp": 0.009552898816764355,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5105624198913574,
+   "relative_semitones": -2.027517459793304
+  },
+  {
+   "amp": 0.009348099119961262,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.9720399379730225,
+   "relative_semitones": 1.9808902969720086
+  },
+  {
+   "amp": 0.00930290948599577,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.5138514041900635,
+   "relative_semitones": 5.18938155031388
+  },
+  {
+   "amp": 0.00921238586306572,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.1345434188842773,
+   "relative_semitones": 1.957255103012471
+  },
+  {
+   "amp": 0.00918809324502945,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.2858375608921051,
+   "relative_semitones": -0.02650253458369484
+  },
+  {
+   "amp": 0.008895272389054298,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.73772132396698,
+   "relative_semitones": -1.813007447470744
+  },
+  {
+   "amp": 0.008869902230799198,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.43965744972229,
+   "relative_semitones": -1.8350750128058728
+  },
+  {
+   "amp": 0.008646088652312756,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.541437864303589,
+   "relative_semitones": -5.018006937072116
+  },
+  {
+   "amp": 0.008499380201101303,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0150973796844482,
+   "relative_semitones": -9.021038006050194
+  },
+  {
+   "amp": 0.00831513199955225,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5324598550796509,
+   "relative_semitones": 6.973145399882571
+  },
+  {
+   "amp": 0.008130273781716824,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.47581884264945984,
+   "relative_semitones": -2.0200769043928544
+  },
+  {
+   "amp": 0.008097616955637932,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.632291316986084,
+   "relative_semitones": -0.0198722063615687
+  },
+  {
+   "amp": 0.007721278350800276,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.3008825778961182,
+   "relative_semitones": 1.9867932645012782
+  },
+  {
+   "amp": 0.007535683922469616,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2677462100982666,
+   "relative_semitones": 0.03307032919454071
+  },
+  {
+   "amp": 0.007517659105360508,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.5397570133209229,
+   "relative_semitones": -1.805656523131015
+  },
+  {
+   "amp": 0.007488560397177935,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.11954665184021,
+   "relative_semitones": 11.999999999999991
+  },
+  {
+   "amp": 0.0074765258468687534,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.7969993948936462,
+   "relative_semitones": 5.1942873731722345
+  },
+  {
+   "amp": 0.007430859841406345,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.021127939224243,
+   "relative_semitones": 12.003310410398473
+  },
+  {
+   "amp": 0.007393436972051859,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5404367446899414,
+   "relative_semitones": -2.05731570577391
+  },
+  {
+   "amp": 0.007329106796532869,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.4373328983783722,
+   "relative_semitones": -5.009162606079767
+  },
+  {
+   "amp": 0.007151613477617502,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6733724474906921,
+   "relative_semitones": -7.0526840756427385
+  },
+  {
+   "amp": 0.00704862829297781,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.102219820022583,
+   "relative_semitones": 6.968718683294635
+  },
+  {
+   "amp": 0.007040246389806271,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.21105854213237762,
+   "relative_semitones": -7.0626368080341955
+  },
+  {
+   "amp": 0.006947006564587355,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.9492154121398926,
+   "relative_semitones": 6.977569796617223
+  },
+  {
+   "amp": 0.006853442173451185,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.6957015991210938,
+   "relative_semitones": -6.933698110663262
+  },
+  {
+   "amp": 0.006841647904366255,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0232338905334473,
+   "relative_semitones": -9.065685861154194
+  },
+  {
+   "amp": 0.0067431749776005745,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.3243446946144104,
+   "relative_semitones": -9.009893636520804
+  },
+  {
+   "amp": 0.006709286943078041,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.1147642135620117,
+   "relative_semitones": -7.042737061713813
+  },
+  {
+   "amp": 0.006523740477859974,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 3.1131937503814697,
+   "relative_semitones": -6.923819207725092
+  },
+  {
+   "amp": 0.006514637265354395,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.42811423540115356,
+   "relative_semitones": 5.164835520006907
+  },
+  {
+   "amp": 0.006481348071247339,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.21342489123344421,
+   "relative_semitones": 11.996688956474353
+  },
+  {
+   "amp": 0.0064596314914524555,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.814669132232666,
+   "relative_semitones": -2.0126395454453743
+  },
+  {
+   "amp": 0.006421648431569338,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.251331329345703,
+   "relative_semitones": -6.943582653996898
+  },
+  {
+   "amp": 0.006389685440808535,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5287423133850098,
+   "relative_semitones": -5.053428322944078
+  },
+  {
+   "amp": 0.006388214882463217,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.23921097815036774,
+   "relative_semitones": -7.072593927838156
+  },
+  {
+   "amp": 0.006349826231598854,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.929161310195923,
+   "relative_semitones": 12.006618410542746
+  },
+  {
+   "amp": 0.006328510120511055,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.2119405269622803,
+   "relative_semitones": 0.019849421929147557
+  },
+  {
+   "amp": 0.00620714295655489,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.3930976390838623,
+   "relative_semitones": 6.95100405946922
+  },
+  {
+   "amp": 0.006046637427061796,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.4619674682617188,
+   "relative_semitones": -1.7983106913895608
+  },
+  {
+   "amp": 0.0059433081187307835,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.8998069763183594,
+   "relative_semitones": -5.000322791071355
+  },
+  {
+   "amp": 0.005933247972279787,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.43449363112449646,
+   "relative_semitones": 6.9554341176107615
+  },
+  {
+   "amp": 0.005917901173233986,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.5440032482147217,
+   "relative_semitones": -7.032795759679972
+  },
+  {
+   "amp": 0.00582932261750102,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.829163908958435,
+   "relative_semitones": -6.9534728441704905
+  },
+  {
+   "amp": 0.005751756485551596,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.6719532012939453,
+   "relative_semitones": -6.913945938748929
+  },
+  {
+   "amp": 0.0057045044377446175,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.731041193008423,
+   "relative_semitones": 0.013236068561244834
+  },
+  {
+   "amp": 0.005702008027583361,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.6721816062927246,
+   "relative_semitones": -1.8424364639814779
+  },
+  {
+   "amp": 0.005595251452177763,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.918977737426758,
+   "relative_semitones": 7.008512512562552
+  },
+  {
+   "amp": 0.005532705225050449,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.6629024744033813,
+   "relative_semitones": 1.992694219988961
+  },
+  {
+   "amp": 0.005502699408680201,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.705599069595337,
+   "relative_semitones": 14.180490957392802
+  },
+  {
+   "amp": 0.005481773521751165,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.6878405213356018,
+   "relative_semitones": -7.082558116132288
+  },
+  {
+   "amp": 0.005432620644569397,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.4621189832687378,
+   "relative_semitones": -0.03313362162510112
+  },
+  {
+   "amp": 0.005419502966105938,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.8171732425689697,
+   "relative_semitones": 10.970296325931438
+  },
+  {
+   "amp": 0.005387488752603531,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.9021358489990234,
+   "relative_semitones": 7.012927881142912
+  },
+  {
+   "amp": 0.005363840144127607,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.4119365215301514,
+   "relative_semitones": 10.973807699111221
+  },
+  {
+   "amp": 0.005352403502911329,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3447253704071045,
+   "relative_semitones": 7.004094831167319
+  },
+  {
+   "amp": 0.00525420717895031,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.0298917293548584,
+   "relative_semitones": 1.9513420535738994
+  },
+  {
+   "amp": 0.00521488580852747,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5122357606887817,
+   "relative_semitones": 14.177573347521205
+  },
+  {
+   "amp": 0.00518118217587471,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.3635709285736084,
+   "relative_semitones": 14.183409643017288
+  },
+  {
+   "amp": 0.0051411050371825695,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.608285427093506,
+   "relative_semitones": -8.998756436275048
+  },
+  {
+   "amp": 0.005140391178429127,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2269585132598877,
+   "relative_semitones": 10.966782353018434
+  },
+  {
+   "amp": 0.005105842370539904,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.8750299215316772,
+   "relative_semitones": 5.001953244876638
+  },
+  {
+   "amp": 0.005071353632956743,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 3.0831003189086914,
+   "relative_semitones": 0.07267080969411675
+  },
+  {
+   "amp": 0.00497275497764349,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2298460006713867,
+   "relative_semitones": -6.904079621984014
+  },
+  {
+   "amp": 0.004912021569907665,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.7234166860580444,
+   "relative_semitones": 11.99337905830838
+  },
+  {
+   "amp": 0.0048520262353122234,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3921401500701904,
+   "relative_semitones": 9.000439777022235
+  },
+  {
+   "amp": 0.004821473732590675,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.0718313455581665,
+   "relative_semitones": 7.017343309424357
+  },
+  {
+   "amp": 0.004818136338144541,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.8287264108657837,
+   "relative_semitones": 9.00437531245649
+  },
+  {
+   "amp": 0.0048092738725245,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.8954477310180664,
+   "relative_semitones": 5.00691112895847
+  },
+  {
+   "amp": 0.004808769561350346,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.099623441696167,
+   "relative_semitones": 5.19919048946091
+  },
+  {
+   "amp": 0.00479805376380682,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.4057912826538086,
+   "relative_semitones": 12.009927555752718
+  },
+  {
+   "amp": 0.004768888466060162,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6451619863510132,
+   "relative_semitones": 10.977320246488267
+  },
+  {
+   "amp": 0.004734181333333254,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.20780034363269806,
+   "relative_semitones": 4.996992608293159
+  },
+  {
+   "amp": 0.0047150105237960815,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3879742622375488,
+   "relative_semitones": -6.963367358423533
+  },
+  {
+   "amp": 0.004668216221034527,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.6084586381912231,
+   "relative_semitones": 6.999677208928636
+  },
+  {
+   "amp": 0.0046538859605789185,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.9751396179199219,
+   "relative_semitones": -7.022860162985071
+  },
+  {
+   "amp": 0.004631045740097761,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.2154667377471924,
+   "relative_semitones": 6.9819930629278755
+  },
+  {
+   "amp": 0.004624929279088974,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.9583179354667664,
+   "relative_semitones": 8.99650334673722
+  },
+  {
+   "amp": 0.004577686078846455,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.8090598583221436,
+   "relative_semitones": 5.011867593614816
+  }
+ ],
+ [
+  {
+   "amp": 0.014276329427957535,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3492422103881836,
+   "relative_semitones": 0.0
+  },
+  {
+   "amp": 0.012282222509384155,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.22843861579895,
+   "relative_semitones": 0.006618410542756493
+  },
+  {
+   "amp": 0.011789907701313496,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.400296688079834,
+   "relative_semitones": -2.04241017163895
+  },
+  {
+   "amp": 0.011547690257430077,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.198936700820923,
+   "relative_semitones": 1.9690767334037707
+  },
+  {
+   "amp": 0.011406928300857544,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.943741500377655,
+   "relative_semitones": 1.9631661335318757
+  },
+  {
+   "amp": 0.011263142339885235,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.36696240305900574,
+   "relative_semitones": 5.174658372520752
+  },
+  {
+   "amp": 0.011240342631936073,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0977163314819336,
+   "relative_semitones": -9.043346791018616
+  },
+  {
+   "amp": 0.011088607832789421,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5061092376708984,
+   "relative_semitones": -5.035707976326276
+  },
+  {
+   "amp": 0.011045270599424839,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.7376692891120911,
+   "relative_semitones": -2.034963214222364
+  },
+  {
+   "amp": 0.011021800339221954,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.7145400047302246,
+   "relative_semitones": 5.179567050403128
+  },
+  {
+   "amp": 0.010606599040329456,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6710737943649292,
+   "relative_semitones": -2.049862335314832
+  },
+  {
+   "amp": 0.010561881586909294,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.0335135459899902,
+   "relative_semitones": 1.9749837296766342
+  },
+  {
+   "amp": 0.01044509932398796,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.7799403667449951,
+   "relative_semitones": -1.8277147144630288
+  },
+  {
+   "amp": 0.010413767769932747,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.029813237488269806,
+   "relative_semitones": -9.03218805616183
+  },
+  {
+   "amp": 0.010205449536442757,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.5318803787231445,
+   "relative_semitones": 5.1844756548045865
+  },
+  {
+   "amp": 0.010203050449490547,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6582948565483093,
+   "relative_semitones": -5.02685460011742
+  },
+  {
+   "amp": 0.01016922201961279,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.3362553119659424,
+   "relative_semitones": -1.82035951919296
+  },
+  {
+   "amp": 0.010064373724162579,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.759690523147583,
+   "relative_semitones": 5.169746983420196
+  },
+  {
+   "amp": 0.009992542676627636,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.11100471019744873,
+   "relative_semitones": -9.054512722919489
+  },
+  {
+   "amp": 0.009813440032303333,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5914885401725769,
+   "relative_semitones": -5.04456588238923
+  },
+  {
+   "amp": 0.009709369391202927,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5331022143363953,
+   "relative_semitones": -0.006620941691610628
+  },
+  {
+   "amp": 0.009579827077686787,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.943068027496338,
+   "relative_semitones": 0.02646202527894554
+  },
+  {
+   "amp": 0.009552898816764355,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5105624198913574,
+   "relative_semitones": -2.027517459793304
+  },
+  {
+   "amp": 0.009348099119961262,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.9720399379730225,
+   "relative_semitones": 1.9808902969720086
+  },
+  {
+   "amp": 0.00930290948599577,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.5138514041900635,
+   "relative_semitones": 5.18938155031388
+  },
+  {
+   "amp": 0.00921238586306572,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.1345434188842773,
+   "relative_semitones": 1.957255103012471
+  },
+  {
+   "amp": 0.00918809324502945,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.2858375608921051,
+   "relative_semitones": -0.02650253458369484
+  },
+  {
+   "amp": 0.008895272389054298,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.73772132396698,
+   "relative_semitones": -1.813007447470744
+  },
+  {
+   "amp": 0.008869902230799198,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.43965744972229,
+   "relative_semitones": -1.8350750128058728
+  },
+  {
+   "amp": 0.008646088652312756,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.541437864303589,
+   "relative_semitones": -5.018006937072116
+  },
+  {
+   "amp": 0.008499380201101303,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0150973796844482,
+   "relative_semitones": -9.021038006050194
+  },
+  {
+   "amp": 0.00831513199955225,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5324598550796509,
+   "relative_semitones": 6.973145399882571
+  },
+  {
+   "amp": 0.008130273781716824,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.47581884264945984,
+   "relative_semitones": -2.0200769043928544
+  },
+  {
+   "amp": 0.008097616955637932,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.632291316986084,
+   "relative_semitones": -0.0198722063615687
+  },
+  {
+   "amp": 0.007721278350800276,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.3008825778961182,
+   "relative_semitones": 1.9867932645012782
+  },
+  {
+   "amp": 0.007535683922469616,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2677462100982666,
+   "relative_semitones": 0.03307032919454071
+  },
+  {
+   "amp": 0.007517659105360508,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.5397570133209229,
+   "relative_semitones": -1.805656523131015
+  },
+  {
+   "amp": 0.007488560397177935,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.11954665184021,
+   "relative_semitones": 11.999999999999991
+  },
+  {
+   "amp": 0.0074765258468687534,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.7969993948936462,
+   "relative_semitones": 5.1942873731722345
+  },
+  {
+   "amp": 0.007430859841406345,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.021127939224243,
+   "relative_semitones": 12.003310410398473
+  },
+  {
+   "amp": 0.007393436972051859,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5404367446899414,
+   "relative_semitones": -2.05731570577391
+  },
+  {
+   "amp": 0.007329106796532869,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.4373328983783722,
+   "relative_semitones": -5.009162606079767
+  },
+  {
+   "amp": 0.007151613477617502,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6733724474906921,
+   "relative_semitones": -7.0526840756427385
+  },
+  {
+   "amp": 0.00704862829297781,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.102219820022583,
+   "relative_semitones": 6.968718683294635
+  },
+  {
+   "amp": 0.007040246389806271,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.21105854213237762,
+   "relative_semitones": -7.0626368080341955
+  },
+  {
+   "amp": 0.006947006564587355,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.9492154121398926,
+   "relative_semitones": 6.977569796617223
+  },
+  {
+   "amp": 0.006853442173451185,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.6957015991210938,
+   "relative_semitones": -6.933698110663262
+  },
+  {
+   "amp": 0.006841647904366255,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -3.0232338905334473,
+   "relative_semitones": -9.065685861154194
+  },
+  {
+   "amp": 0.0067431749776005745,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.3243446946144104,
+   "relative_semitones": -9.009893636520804
+  },
+  {
+   "amp": 0.006709286943078041,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.1147642135620117,
+   "relative_semitones": -7.042737061713813
+  },
+  {
+   "amp": 0.006523740477859974,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 3.1131937503814697,
+   "relative_semitones": -6.923819207725092
+  },
+  {
+   "amp": 0.006514637265354395,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.42811423540115356,
+   "relative_semitones": 5.164835520006907
+  },
+  {
+   "amp": 0.006481348071247339,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.21342489123344421,
+   "relative_semitones": 11.996688956474353
+  },
+  {
+   "amp": 0.0064596314914524555,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.814669132232666,
+   "relative_semitones": -2.0126395454453743
+  },
+  {
+   "amp": 0.006421648431569338,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.251331329345703,
+   "relative_semitones": -6.943582653996898
+  },
+  {
+   "amp": 0.006389685440808535,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.5287423133850098,
+   "relative_semitones": -5.053428322944078
+  },
+  {
+   "amp": 0.006388214882463217,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.23921097815036774,
+   "relative_semitones": -7.072593927838156
+  },
+  {
+   "amp": 0.006349826231598854,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.929161310195923,
+   "relative_semitones": 12.006618410542746
+  },
+  {
+   "amp": 0.006328510120511055,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.2119405269622803,
+   "relative_semitones": 0.019849421929147557
+  },
+  {
+   "amp": 0.00620714295655489,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.3930976390838623,
+   "relative_semitones": 6.95100405946922
+  },
+  {
+   "amp": 0.006046637427061796,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.4619674682617188,
+   "relative_semitones": -1.7983106913895608
+  },
+  {
+   "amp": 0.0059433081187307835,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.8998069763183594,
+   "relative_semitones": -5.000322791071355
+  },
+  {
+   "amp": 0.005933247972279787,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.43449363112449646,
+   "relative_semitones": 6.9554341176107615
+  },
+  {
+   "amp": 0.005917901173233986,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.5440032482147217,
+   "relative_semitones": -7.032795759679972
+  },
+  {
+   "amp": 0.00582932261750102,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.829163908958435,
+   "relative_semitones": -6.9534728441704905
+  },
+  {
+   "amp": 0.005751756485551596,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.6719532012939453,
+   "relative_semitones": -6.913945938748929
+  },
+  {
+   "amp": 0.0057045044377446175,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.731041193008423,
+   "relative_semitones": 0.013236068561244834
+  },
+  {
+   "amp": 0.005702008027583361,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.6721816062927246,
+   "relative_semitones": -1.8424364639814779
+  },
+  {
+   "amp": 0.005595251452177763,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.918977737426758,
+   "relative_semitones": 7.008512512562552
+  },
+  {
+   "amp": 0.005532705225050449,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.6629024744033813,
+   "relative_semitones": 1.992694219988961
+  },
+  {
+   "amp": 0.005502699408680201,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.705599069595337,
+   "relative_semitones": 14.180490957392802
+  },
+  {
+   "amp": 0.005481773521751165,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.6878405213356018,
+   "relative_semitones": -7.082558116132288
+  },
+  {
+   "amp": 0.005432620644569397,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.4621189832687378,
+   "relative_semitones": -0.03313362162510112
+  },
+  {
+   "amp": 0.005419502966105938,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.8171732425689697,
+   "relative_semitones": 10.970296325931438
+  },
+  {
+   "amp": 0.005387488752603531,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.9021358489990234,
+   "relative_semitones": 7.012927881142912
+  },
+  {
+   "amp": 0.005363840144127607,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.4119365215301514,
+   "relative_semitones": 10.973807699111221
+  },
+  {
+   "amp": 0.005352403502911329,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3447253704071045,
+   "relative_semitones": 7.004094831167319
+  },
+  {
+   "amp": 0.00525420717895031,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.0298917293548584,
+   "relative_semitones": 1.9513420535738994
+  },
+  {
+   "amp": 0.00521488580852747,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.5122357606887817,
+   "relative_semitones": 14.177573347521205
+  },
+  {
+   "amp": 0.00518118217587471,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.3635709285736084,
+   "relative_semitones": 14.183409643017288
+  },
+  {
+   "amp": 0.0051411050371825695,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.608285427093506,
+   "relative_semitones": -8.998756436275048
+  },
+  {
+   "amp": 0.005140391178429127,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2269585132598877,
+   "relative_semitones": 10.966782353018434
+  },
+  {
+   "amp": 0.005105842370539904,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.8750299215316772,
+   "relative_semitones": 5.001953244876638
+  },
+  {
+   "amp": 0.005071353632956743,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 3.0831003189086914,
+   "relative_semitones": 0.07267080969411675
+  },
+  {
+   "amp": 0.00497275497764349,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.2298460006713867,
+   "relative_semitones": -6.904079621984014
+  },
+  {
+   "amp": 0.004912021569907665,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.7234166860580444,
+   "relative_semitones": 11.99337905830838
+  },
+  {
+   "amp": 0.0048520262353122234,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3921401500701904,
+   "relative_semitones": 9.000439777022235
+  },
+  {
+   "amp": 0.004821473732590675,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.0718313455581665,
+   "relative_semitones": 7.017343309424357
+  },
+  {
+   "amp": 0.004818136338144541,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.8287264108657837,
+   "relative_semitones": 9.00437531245649
+  },
+  {
+   "amp": 0.0048092738725245,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.8954477310180664,
+   "relative_semitones": 5.00691112895847
+  },
+  {
+   "amp": 0.004808769561350346,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.099623441696167,
+   "relative_semitones": 5.19919048946091
+  },
+  {
+   "amp": 0.00479805376380682,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 2.4057912826538086,
+   "relative_semitones": 12.009927555752718
+  },
+  {
+   "amp": 0.004768888466060162,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.6451619863510132,
+   "relative_semitones": 10.977320246488267
+  },
+  {
+   "amp": 0.004734181333333254,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.20780034363269806,
+   "relative_semitones": 4.996992608293159
+  },
+  {
+   "amp": 0.0047150105237960815,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.3879742622375488,
+   "relative_semitones": -6.963367358423533
+  },
+  {
+   "amp": 0.004668216221034527,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 0.6084586381912231,
+   "relative_semitones": 6.999677208928636
+  },
+  {
+   "amp": 0.0046538859605789185,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -1.9751396179199219,
+   "relative_semitones": -7.022860162985071
+  },
+  {
+   "amp": 0.004631045740097761,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": 1.2154667377471924,
+   "relative_semitones": 6.9819930629278755
+  },
+  {
+   "amp": 0.004624929279088974,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -0.9583179354667664,
+   "relative_semitones": 8.99650334673722
+  },
+  {
+   "amp": 0.004577686078846455,
+   "osc": {
+    "LFO_amp": 0.0,
+    "LFO_hertz": 0.0,
+    "is_FM": false,
+    "oscillator_type": 0
+   },
+   "phase": -2.8090598583221436,
+   "relative_semitones": 5.011867593614816
+  }
+ ]
+]

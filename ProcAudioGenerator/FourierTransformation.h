@@ -75,9 +75,10 @@ namespace FourierTransformation
 	static std::vector<Complex> TakeEverySecond(const std::vector<Complex>& values, bool startOnFirst)
 	{
 		std::vector<Complex> result;
-		result.reserve(values.size() / 2);
+		int new_size = static_cast<int>(values.size()) / 2;
+		result.reserve(new_size);
 		int offset = startOnFirst ? 0 : 1;
-		for (int i = 0; i < result.size(); i++)
+		for (int i = 0; i < new_size; i++)
 		{
 			int index = i * 2 + offset;
 			result.push_back(values[index]);
@@ -153,7 +154,7 @@ namespace FourierTransformation
 
 		double angle_increment = TAU / num_vals;
 
-		for (int i = 0; i < num_vals; i++)
+		for (int i = 0; i < num_vals/2; i++)
 		{
 			Complex c = CreateFromPolar(angle_increment * i, 1);
 			Complex new_c = (oddSteps[i] * c);
