@@ -43,9 +43,9 @@ private:
 	//possible instruments to play
 	Instrument instruments[NUM_AVAILABLE_INSTRUMENTS];
 	MarkovChain* markov_chains[NUM_AVAILABLE_INSTRUMENTS];
-
+public:
 	InstrumentSerialser instrument_serialiser;
-
+private:
 	//a buffer to store the sound values in (1 for each state so they can be combined)
 	std::vector<double>* note_buffers[NUM_AVAILABLE_INSTRUMENTS*NUM_POSSIBLE_SYNCHRONOUS_STATES];
 
@@ -71,7 +71,8 @@ public:
 
 	int Load_Wav_File_Into_Generator(std::string filename);
 
-	void Generate_Instrument_From_Wav(int wav_index);
+	//Returns the most significant frequency in the wav file
+	double Generate_Instrument_From_Wav(int wav_index);
 
 	void Generate_Music(int length = -1);
 };

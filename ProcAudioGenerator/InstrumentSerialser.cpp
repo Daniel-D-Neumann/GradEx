@@ -2,7 +2,11 @@
 
 void InstrumentSerialser::ReadInstruments(const std::string& filePath, std::vector<std::vector<FrequencyBreakdown>>* instrument_vec)
 {
+	if (!std::filesystem::file_size(filePath)) return;
+
 	std::ifstream file(filePath);
+	if (!file.is_open()) return;
+	
 	json data = json::parse(file);
 
 	auto& json_instruments = data;
@@ -25,12 +29,13 @@ void InstrumentSerialser::ReadInstruments(const std::string& filePath, std::vect
 		}
 		instrument_vec->push_back(freqs);
 	}
+
 	file.close();
 }
 
 InstrumentSerialser::InstrumentSerialser()
 {
-	//ReadInstruments(required_file_path, &instruments);
+	ReadInstruments(required_file_path, &instruments);
 	ReadInstruments(custom_file_path, &custom_instruments);
 }
 
@@ -56,7 +61,9 @@ std::vector<FrequencyBreakdown>* InstrumentSerialser::SaveInstrument(const std::
 	json data;
 
 	//push back newly created instrument
-	custom_instruments.push_back(constituent_frequencies);
+	//custom_instruments.push_back(constituent_frequencies);
+
+	custom_instruments = { constituent_frequencies };
 
 	data = custom_instruments;
 

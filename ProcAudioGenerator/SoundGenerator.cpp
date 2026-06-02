@@ -52,7 +52,7 @@ void SoundGenerator::Init_Instruments()
 	instruments[0] = Instrument(env, freqs);
 
 	//Marimba
-	env = ADSREnvelope(0.05, 0.3, 0.8, 0.05);
+	env = ADSREnvelope(0.05, 0.3, 0.1, 0.05);
 	freqs = {
 		FrequencyBreakdown {
 			.osc = OscillatorBreakdown {
@@ -131,7 +131,7 @@ void SoundGenerator::Init_Instruments()
 	instruments[2] = Instrument(env, freqs);
 
 	//AcousticGuitar
-	env = ADSREnvelope(0.05, 0.67, 0.1, 0.67);
+	env = ADSREnvelope(0.05, 1, 0.3, 0.67);
 	freqs =
 	{
 		FrequencyBreakdown {
@@ -171,7 +171,9 @@ void SoundGenerator::Init_Instruments()
 			.relative_semitones = 34
 		},
 	};
-	instruments[3] = Instrument(env, freqs);	
+
+	//freqs = instrument_serialiser.custom_instruments[0];
+	//instruments[3] = Instrument(env, freqs);	
 
 	//BassGuitar
 	env = ADSREnvelope(0.05, 0.8, 0.1, 0.67);
@@ -461,12 +463,17 @@ int SoundGenerator::Load_Wav_File_Into_Generator(std::string filename)
 	return index;
 }
 
-void SoundGenerator::Generate_Instrument_From_Wav(int wav_index)
+double SoundGenerator::Generate_Instrument_From_Wav(int wav_index)
 {
 	std::vector<WaveData> constituent_waves = FourierTransformation::FFT(loadedWavs.at(wav_index), 44100);
+	if (constituent_waves.size() == 0)
+	{
+		std::cout << "Failed to Read File" << std::endl;
+		return 0;
+	}
 	FourierTransformation::SortByAmplitudeDesc(constituent_waves);
 
-	const int num_siginificant_frequencies = 100;
+	const int num_siginificant_frequencies = 500;
 	std::vector<FrequencyBreakdown> most_significant_frequencies;
 	most_significant_frequencies.reserve(num_siginificant_frequencies);
 
@@ -479,6 +486,8 @@ void SoundGenerator::Generate_Instrument_From_Wav(int wav_index)
 	}
 
 	instrument_serialiser.SaveInstrument(most_significant_frequencies);
+
+	return mostSignificantFrequency;
 }
 
 bool SoundGenerator::Get_File_Instrument(std::string filename, File_Type file_type, std::vector<int>& instruments)

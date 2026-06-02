@@ -13,6 +13,7 @@ const std::string custom_file_path = "JsonInstruments/custom_instruments.json";
 class InstrumentSerialser
 {
 	void ReadInstruments(const std::string& filePath, std::vector<std::vector<FrequencyBreakdown>>* instrument_vec);
+public:
 	std::vector<std::vector<FrequencyBreakdown>> instruments;
 	std::vector<std::vector<FrequencyBreakdown>> custom_instruments;
 public:
