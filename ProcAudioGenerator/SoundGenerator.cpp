@@ -15,363 +15,53 @@ void SoundGenerator::Init_Instruments()
 
 	//Piano
 	env = ADSREnvelope(0.05, 0.35, .8, 0.05);
-	freqs = {
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown {
-				.is_FM = true,
-				.oscillator_type = SIN,
-				.LFO_hertz = 5.0,
-				.LFO_amp = 0.001
-			},
-		},
-		FrequencyBreakdown {
-			.amp = 0.5,
-			.relative_semitones = 12,
-		},
-		FrequencyBreakdown {
-			.amp = 0.25,
-			.relative_semitones = 19,
-		},
-		FrequencyBreakdown {
-			.amp = 0.0625,
-			.relative_semitones = 24,
-		},
-		FrequencyBreakdown {
-			.amp = 0.0625,
-			.relative_semitones = 28,
-		},
-		FrequencyBreakdown {
-			.amp = 0.03125,
-			.relative_semitones = 31,
-		},
-		FrequencyBreakdown {
-			.amp = 0.125,
-			.relative_semitones = 34,
-		},
-	};
+	freqs = instrument_serialiser.instruments[0];
 	instruments[0] = Instrument(env, freqs);
 
 	//Marimba
 	env = ADSREnvelope(0.05, 0.3, 0.1, 0.05);
-	freqs = {
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown {
-				.is_FM = true,
-				.oscillator_type = SIN,
-				.LFO_hertz = 5.0,
-				.LFO_amp = 0.001
-			},
-		},
-		FrequencyBreakdown {
-			.amp = 0.0625,
-			.relative_semitones = 24,
-		},
-		FrequencyBreakdown {
-			.amp = 0.9,
-			.relative_semitones = 40,
-		},
-		FrequencyBreakdown {
-			.amp = 0.015,
-			.relative_semitones = 47,
-		},
-		FrequencyBreakdown {
-			.amp = 0.0625,
-			.relative_semitones = 51,
-		},
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown {
-				.oscillator_type = RANDOM
-				},
-			.amp = 0.02,
-			.relative_semitones = 31,
-		},
-	};
+	freqs = instrument_serialiser.instruments[1];
 	instruments[1] = Instrument(env, freqs);	
 
 	//Harmonica
 	env = ADSREnvelope(0.16, 0.33, 0.5, 0.14);
-	freqs =
-	{
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown{
-				.is_FM = true,
-				.oscillator_type = FMSIN,
-				.LFO_hertz = 5.0,
-				.LFO_amp = 0.001
-			},
-		},
-		FrequencyBreakdown {
-			.amp = 0.5f,
-			.relative_semitones = 12
-		},
-		FrequencyBreakdown {
-			.amp = 0.25f,
-			.relative_semitones = 19
-		},
-		FrequencyBreakdown {
-			.amp = 0.25f,
-			.relative_semitones = 24
-		},
-		FrequencyBreakdown {
-			.amp = 1.0f,
-			.relative_semitones = 28
-		},
-		FrequencyBreakdown {
-			.amp = 0.25f,
-			.relative_semitones = 28
-		},
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown {
-				.oscillator_type = RANDOM
-			},
-			.amp = 0.02f,
-			.relative_semitones = 12
-		},
-	};
+	freqs = instrument_serialiser.instruments[2];
 	instruments[2] = Instrument(env, freqs);
 
 	//AcousticGuitar
 	env = ADSREnvelope(0.05, 1, 0.3, 0.67);
-	freqs =
-	{
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown{
-				.is_FM = true,
-				.oscillator_type = FMSIN,
-				.LFO_hertz = 5.0,
-				.LFO_amp = 0.001
-			},
-			.relative_semitones = 19
-		},
-		FrequencyBreakdown {
-			.amp = 0.90,
-			.relative_semitones = 12
-		},
-		FrequencyBreakdown {
-			.amp = 0.0625,
-			.relative_semitones = 7
-		},
-		FrequencyBreakdown {
-			.amp = 0.0625,
-		},
-		FrequencyBreakdown {
-			.amp = 0.0625,
-			.relative_semitones = 24
-		},
-		FrequencyBreakdown {
-			.amp = 0.5,
-			.relative_semitones = 28
-		},
-		FrequencyBreakdown {
-			.amp = 0.25,
-			.relative_semitones = 31
-		},
-		FrequencyBreakdown {
-			.amp = 0.0625,
-			.relative_semitones = 34
-		},
-	};
-
-	//freqs = instrument_serialiser.custom_instruments[0];
-	//instruments[3] = Instrument(env, freqs);	
+	freqs = instrument_serialiser.instruments[3];
+	instruments[3] = Instrument(env, freqs);	
 
 	//BassGuitar
 	env = ADSREnvelope(0.05, 0.8, 0.1, 0.67);
-	freqs =
-	{
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown{
-				.oscillator_type = SAW,
-			},
-		},
-		FrequencyBreakdown {
-			.amp = 0.50,
-			.relative_semitones = 12
-		},
-		FrequencyBreakdown {
-			.amp = 0.125,
-			.relative_semitones = 19
-		},
-		FrequencyBreakdown {
-			.amp = 0.25,
-			.relative_semitones = 24
-		},
-		FrequencyBreakdown {
-			.amp = 0.18,
-			.relative_semitones = 28
-		},
-		FrequencyBreakdown {
-			.amp = 0.0156,
-			.relative_semitones = 31
-		}
-	};
+	freqs = instrument_serialiser.instruments[4];
 	instruments[4] = Instrument(env,freqs);	
 
 	//Violin
 	env = ADSREnvelope(0.05, 0.67, 0.1, 0.67);
-	freqs =
-	{
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown{
-				.oscillator_type = SAW,
-			},
-			.relative_semitones = 19,
-		},
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown{
-				.is_FM = true,
-				.oscillator_type = FMSIN,
-				.LFO_hertz = 5.0,
-				.LFO_amp = 0.001,
-			},
-			.amp = 0.7,
-			.relative_semitones = 12
-		},
-		FrequencyBreakdown {
-			.amp = .25,
-		},
-		FrequencyBreakdown {
-			.amp = .5,
-			.relative_semitones = 24
-		},
-		FrequencyBreakdown {
-			.amp = 0.25,
-			.relative_semitones = 28
-		},
-		FrequencyBreakdown {
-			.amp = 0.0125,
-			.relative_semitones = 31
-		}
-	};
+	freqs = instrument_serialiser.instruments[5];
 	instruments[5] = Instrument(env, freqs);
 
 	//Trumpet
 	env = ADSREnvelope(0.05, 1, 0.9, 0.67);
-	freqs =
-	{
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown{
-				.oscillator_type = SAW,
-			},
-		},
-		FrequencyBreakdown {
-			.amp = 1,
-			.relative_semitones = 12
-		},
-		FrequencyBreakdown {
-			.amp = 0.9,
-			.relative_semitones = 19
-		},
-		FrequencyBreakdown {
-			.amp = 0.25,
-			.relative_semitones = 24
-		},
-		FrequencyBreakdown {
-			.amp = 0.125,
-			.relative_semitones = 28
-		},
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown {
-				.oscillator_type = RANDOM
-			},
-			.amp = 0.0625,
-		},
-		FrequencyBreakdown {
-			.amp = 0.0625,
-			.relative_semitones = 31
-		},
-	};
+	freqs = instrument_serialiser.instruments[6];
 	instruments[6] = Instrument(env, freqs);
 
 	//Flute
 	env = ADSREnvelope(0.05, 1, 0.9, 0.67);
 	//TODO FIX
-	freqs =
-	{
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown{
-				.is_FM = true,
-				.oscillator_type = FMTRIANGLE,
-				.LFO_hertz = 0.05,
-				.LFO_amp = 1
-			},
-		},
-		FrequencyBreakdown {
-			.amp = 0.50,
-			.relative_semitones = 12
-		},
-		FrequencyBreakdown {
-			.amp = 0.125,
-			.relative_semitones = 19
-		},
-		FrequencyBreakdown {
-			.amp = 0.25,
-			.relative_semitones = 24
-		},
-		FrequencyBreakdown {
-			.amp = 0.18,
-			.relative_semitones = 28
-		},
-		FrequencyBreakdown {
-			.amp = 0.0156,
-			.relative_semitones = 31
-		}
-	};
+	freqs = instrument_serialiser.instruments[7];
 	instruments[7] = Instrument(env, freqs);
 
 	//Banjo
 	env = ADSREnvelope(0.05, 0.67, 0.1, 0.67);
-	freqs =
-	{
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown{
-				.is_FM = true,
-				.oscillator_type = FMSIN,
-				.LFO_hertz = 5.0,
-				.LFO_amp = 0.001,
-			},
-		},
-		FrequencyBreakdown {
-			.amp = 0.25,
-			.relative_semitones = -12
-		},
-		FrequencyBreakdown {
-			.amp = 0.5,
-			.relative_semitones = 7
-		},
-		FrequencyBreakdown {
-			.amp = 0.25,
-			.relative_semitones = 12
-		},
-		FrequencyBreakdown {
-			.amp = 0.0018,
-			.relative_semitones = 16
-		},
-		FrequencyBreakdown {
-			.amp = 0.0156,
-			.relative_semitones = 19
-		}
-	};
+	freqs = instrument_serialiser.instruments[8];
 	instruments[8] = Instrument(env, freqs);
 
 	//Drum
 	env = ADSREnvelope(0.05, 0.15, 0., 0.1);
-	freqs =
-	{
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown {
-				.oscillator_type = RANDOM
-			},
-			.amp = .01
-		},
-		FrequencyBreakdown {
-			.osc = OscillatorBreakdown {
-				.oscillator_type = SQUARE
-			},
-			.amp = .01
-		//TODO set frequency over semitones
-		},
-	};
+	freqs = instrument_serialiser.instruments[9];
 	instruments[9] = Instrument(env, freqs);
 
 	//Square
@@ -386,7 +76,7 @@ void SoundGenerator::Init_Instruments()
 	env = ADSREnvelope(0.01, 0, 0, 1.0);
 	//freqs = ...
 
-	/*for (int instrument = 0; instrument < NUM_AVAILABLE_INSTRUMENTS; instrument++)
+	for (int instrument = 0; instrument < NUM_AVAILABLE_INSTRUMENTS; instrument++)
 	{
 		markov_chains[instrument] = new MarkovChain();
 		markov_chains[instrument]->instrument = instrument;
@@ -395,7 +85,7 @@ void SoundGenerator::Init_Instruments()
 	for (int i = 0; i < NUM_AVAILABLE_INSTRUMENTS * NUM_POSSIBLE_SYNCHRONOUS_STATES; i++)
 	{
 		note_buffers[i] = new std::vector<double>();
-	}*/
+	}
 }
 
 SoundGenerator::~SoundGenerator()
