@@ -5,7 +5,7 @@
 #include "MarkovChain.h"
 #include "MidiParser.h"
 
-const enum
+enum
 {
 	C0, Cs0, D0, Ds0, E0, F0, Fs0, G0, Gs0, A0, As0, B0,
 	C1, Cs1, D1, Ds1, E1, F1, Fs1, G1, Gs1, A1, As1, B1,
@@ -32,7 +32,7 @@ static const float Note_To_Frequency[108]
 
 const int NUM_AVAILABLE_INSTRUMENTS = 12;
 
-const enum Instruments
+enum Instruments
 {
 	PIANO, MARIMBA, HARMONICA, ACOUSTIC_GUITAR, BASS_GUITAR, VIOLIN, TRUMPET, FLUTE, BANJO, DRUM, SYNTHSQUARE, SYNTHSAW
 };
