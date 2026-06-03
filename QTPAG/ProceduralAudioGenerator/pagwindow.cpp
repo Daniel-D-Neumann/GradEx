@@ -1,26 +1,23 @@
-#include "mainwindow.h"
-#include "./ui_mainwindow.h"
+#include "pagwindow.h"
+#include "./ui_pagwindow.h"
 #include <QFileDialog>
-#include "../../SoundGenerator.h"
 
-
-MainWindow::MainWindow(QWidget *parent)
+PAGWindow::PAGWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , ui(new Ui::PAGWindow)
 {
     ui->setupUi(this);
 }
 
-MainWindow::~MainWindow()
+PAGWindow::~PAGWindow()
 {
     delete ui;
 }
 
 QString musicFilePath;
 
-void MainWindow::on_B_MusicChooseFilePath_clicked()
+void PAGWindow::on_B_MusicChooseFilePath_clicked()
 {
     musicFilePath = QFileDialog::getOpenFileName(this, tr("Open Song"), "../MidiSongs", tr("Music Files (*.MIDI)"));
     ui->TI_MusicFilePath->setText(musicFilePath);
 }
-
