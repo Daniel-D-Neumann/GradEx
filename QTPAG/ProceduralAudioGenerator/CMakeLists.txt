@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Multimedia)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -25,6 +26,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         Envelopes.cpp Envelopes.h FourierTransformation.cpp FourierTransformation.h Instrument.cpp Instrument.h InstrumentSerialser.cpp InstrumentSerialser.h json.hpp json_fwd.hpp MarkovChain.cpp MarkovChain.h MarkovConsts.h MidiParser.cpp MidiParser.h Oscillator.cpp Oscillator.h SoundGenerator.cpp SoundGenerator.h Timer.cpp Timer.h Vector.cpp Vector.h WriteToWav.cpp WriteToWav.h
         MidiFile/Binasc.cpp MidiFile/Binasc.h MidiFile/MidiEvent.cpp MidiFile/MidiEvent.h MidiFile/MidiEventList.cpp MidiFile/MidiEventList.h MidiFile/MidiFile.cpp MidiFile/MidiFile.h MidiFile/MidiMessage.cpp MidiFile/MidiMessage.h
+        loadingwindow.h loadingwindow.cpp loadingwindow.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET ProceduralAudioGenerator APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -45,6 +47,8 @@ else()
 endif()
 
 target_link_libraries(ProceduralAudioGenerator PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(ProceduralAudioGenerator PRIVATE Qt6::Multimedia)
+
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
@@ -70,3 +74,7 @@ install(TARGETS ProceduralAudioGenerator
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(ProceduralAudioGenerator)
 endif()
+
+add_custom_target(copy_assets ALL
+    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_LIST_DIR}/Assets ${CMAKE_CURRENT_BINARY_DIR}/Assets
+)

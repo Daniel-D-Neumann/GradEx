@@ -6,8 +6,8 @@
 using json = nlohmann::json;
 using namespace nlohmann::literals;
 
-const std::string required_file_path = "JsonInstruments/instruments.json";
-const std::string custom_file_path = "JsonInstruments/custom_instruments.json";
+const std::string required_file_path = "Assets/JsonInstruments/instruments.json";
+const std::string custom_file_path = "Assets/JsonInstruments/custom_instruments.json";
 
 class InstrumentSerialser
 {
