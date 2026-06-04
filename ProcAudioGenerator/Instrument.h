@@ -1,5 +1,5 @@
 #pragma once
-#include<nlohmann/json.hpp>
+#include "json.hpp"
 #include "Envelopes.h"
 #include "Oscillator.h"
 #include <vector>
