@@ -5,6 +5,7 @@
 class SoundGenerator;
 class QMediaPlayer;
 class QAudioOutput;
+class QTableWidgetItem;
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -39,6 +40,14 @@ private slots:
 
     void on_B_InsGenerate_clicked();
 
+    void on_TB_Instruments_itemClicked(QTableWidgetItem *item);
+
+    void on_B_InsSampleGenerate_clicked();
+
+    void on_B_PlayGeneratedInsSample_clicked();
+
+    void on_B_PauseGeneratedInsSample_clicked();
+
 private:
     Ui::PAGWindow *ui;
     SoundGenerator* generator;
@@ -49,6 +58,11 @@ private:
     QString ins_File_Path;
 
     int current_instrument_table_rows = 10;
+    int currnet_custom_instrument_count = 0;
     double wav_MSF = 0;
+    int selected_instrument_row = 0;
+    int selected_instrument_column = 0;
+    int generated_instrument_row = -1;
+    bool is_Instrument_Sample_Playing = false;
 };
 #endif // PAGWINDOW_H

@@ -12,9 +12,8 @@ const std::string custom_file_path = "Assets/JsonInstruments/custom_instruments.
 class InstrumentSerialser
 {
 	void ReadInstruments(const std::string& filePath, std::vector<std::vector<FrequencyBreakdown>>* instrument_vec);
-public:
 	std::vector<std::vector<FrequencyBreakdown>> instruments;
-	std::vector<std::vector<FrequencyBreakdown>> custom_instruments;
+    std::vector<std::vector<FrequencyBreakdown>> custom_instruments;
 public:
 
 	InstrumentSerialser();
@@ -23,6 +22,10 @@ public:
 
 	std::vector<FrequencyBreakdown>* SaveInstrument(const std::vector<FrequencyBreakdown>& constituent_frequencies);
 
+    void ClearCustomInstruments();
 
+    std::vector<FrequencyBreakdown>* GetCustomInstrument(int index);
+    std::vector<FrequencyBreakdown>* GetDefaultInstrument(int index);
+    int GetNumberOfCustomInstruments();
 };
 

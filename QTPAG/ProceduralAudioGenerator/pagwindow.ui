@@ -255,7 +255,7 @@
    <widget class="QLabel" name="L_InstrumentGen_2">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>580</x>
       <y>40</y>
       <width>131</width>
       <height>16</height>
@@ -268,7 +268,7 @@
    <widget class="QTableWidget" name="TB_Instruments">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>580</x>
       <y>60</y>
       <width>281</width>
       <height>201</height>
@@ -340,7 +340,7 @@
      <rect>
       <x>290</x>
       <y>160</y>
-      <width>191</width>
+      <width>211</width>
       <height>24</height>
      </rect>
     </property>
@@ -348,7 +348,7 @@
      <string>Generate Instrument From Sample</string>
     </property>
    </widget>
-   <widget class="QLabel" name="L_MusicFilePath_2">
+   <widget class="QLabel" name="L_ADSR">
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -361,74 +361,74 @@
      <string>Set Custom Instrument ADSR Envelope</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="TI_EventsInMusic_2">
+   <widget class="QLineEdit" name="TI_Attack">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>270</x>
       <y>230</y>
-      <width>21</width>
+      <width>41</width>
       <height>24</height>
      </rect>
     </property>
     <property name="text">
-     <string>0</string>
+     <string>0.05</string>
     </property>
     <property name="maxLength">
-     <number>3</number>
+     <number>4</number>
     </property>
    </widget>
-   <widget class="QLineEdit" name="TI_EventsInMusic_3">
+   <widget class="QLineEdit" name="TI_Decay">
     <property name="geometry">
      <rect>
       <x>350</x>
       <y>230</y>
-      <width>21</width>
+      <width>41</width>
       <height>24</height>
      </rect>
     </property>
     <property name="text">
-     <string>0</string>
+     <string>0.5</string>
     </property>
     <property name="maxLength">
-     <number>3</number>
+     <number>4</number>
     </property>
    </widget>
-   <widget class="QLineEdit" name="TI_EventsInMusic_4">
+   <widget class="QLineEdit" name="TI_Sustain">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>440</x>
       <y>230</y>
-      <width>21</width>
+      <width>41</width>
       <height>24</height>
      </rect>
     </property>
     <property name="text">
-     <string>0</string>
+     <string>0.8</string>
     </property>
     <property name="maxLength">
-     <number>3</number>
+     <number>4</number>
     </property>
    </widget>
-   <widget class="QLineEdit" name="TI_EventsInMusic_5">
+   <widget class="QLineEdit" name="TI_Release">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>530</x>
       <y>230</y>
-      <width>21</width>
+      <width>41</width>
       <height>24</height>
      </rect>
     </property>
     <property name="text">
-     <string>0</string>
+     <string>0.1</string>
     </property>
     <property name="maxLength">
-     <number>3</number>
+     <number>4</number>
     </property>
    </widget>
-   <widget class="QLabel" name="L_MusicFilePath_3">
+   <widget class="QLabel" name="L_Attack">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>230</x>
       <y>230</y>
       <width>41</width>
       <height>16</height>
@@ -438,10 +438,10 @@
      <string>Attack:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="L_MusicFilePath_4">
+   <widget class="QLabel" name="L_Decay">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>310</x>
       <y>230</y>
       <width>41</width>
       <height>16</height>
@@ -451,10 +451,10 @@
      <string>Decay:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="L_MusicFilePath_5">
+   <widget class="QLabel" name="L_Sustain">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>400</x>
       <y>230</y>
       <width>41</width>
       <height>16</height>
@@ -464,10 +464,10 @@
      <string>Sustain:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="L_MusicFilePath_6">
+   <widget class="QLabel" name="L_Release">
     <property name="geometry">
      <rect>
-      <x>450</x>
+      <x>490</x>
       <y>230</y>
       <width>41</width>
       <height>16</height>
@@ -475,6 +475,79 @@
     </property>
     <property name="text">
      <string>Release:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_InsSampleGenerate">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>270</y>
+      <width>281</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate Small Sample Using Selected Instrument</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_PlayGeneratedInsSample">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::MediaPlaybackStart"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_PauseGeneratedInsSample">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>300</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::MediaPlaybackStop"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>20</y>
+      <width>161</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear Custom Instruments</string>
     </property>
    </widget>
   </widget>

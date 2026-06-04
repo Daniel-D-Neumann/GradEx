@@ -5,64 +5,64 @@
 SoundGenerator::SoundGenerator()
 {
 	Init_Instruments();
-    wav_output = new WavWriter("BlankGeneratedWavFile");
+    wav_output = new WavWriter("BlankGeneratedWavFile.wav");
 }
 
 void SoundGenerator::Init_Instruments()
 {
-	std::vector<FrequencyBreakdown> freqs;
+    std::vector<FrequencyBreakdown>* freqs;
 	ADSREnvelope env;
 
 	//Piano
 	env = ADSREnvelope(0.05, 0.35, .8, 0.05);
-	freqs = instrument_serialiser.instruments[0];
-	instruments[0] = Instrument(env, freqs);
+    freqs = instrument_serialiser.GetDefaultInstrument(0);
+    instruments[0] = Instrument(env, *freqs);
 
 	//Marimba
 	env = ADSREnvelope(0.05, 0.3, 0.1, 0.05);
-	freqs = instrument_serialiser.instruments[1];
-	instruments[1] = Instrument(env, freqs);	
+    freqs = instrument_serialiser.GetDefaultInstrument(1);
+    instruments[1] = Instrument(env, *freqs);
 
 	//Harmonica
 	env = ADSREnvelope(0.16, 0.33, 0.5, 0.14);
-	freqs = instrument_serialiser.instruments[2];
-	instruments[2] = Instrument(env, freqs);
+    freqs = instrument_serialiser.GetDefaultInstrument(2);
+    instruments[2] = Instrument(env, *freqs);
 
 	//AcousticGuitar
 	env = ADSREnvelope(0.05, 1, 0.3, 0.67);
-	freqs = instrument_serialiser.instruments[3];
-	instruments[3] = Instrument(env, freqs);	
+    freqs = instrument_serialiser.GetDefaultInstrument(3);
+    instruments[3] = Instrument(env, *freqs);
 
 	//BassGuitar
 	env = ADSREnvelope(0.05, 0.8, 0.1, 0.67);
-	freqs = instrument_serialiser.instruments[4];
-	instruments[4] = Instrument(env,freqs);	
+    freqs = instrument_serialiser.GetDefaultInstrument(4);
+    instruments[4] = Instrument(env, *freqs);
 
 	//Violin
 	env = ADSREnvelope(0.05, 0.67, 0.1, 0.67);
-	freqs = instrument_serialiser.instruments[5];
-	instruments[5] = Instrument(env, freqs);
+    freqs = instrument_serialiser.GetDefaultInstrument(5);
+    instruments[5] = Instrument(env, *freqs);
 
 	//Trumpet
 	env = ADSREnvelope(0.05, 1, 0.9, 0.67);
-	freqs = instrument_serialiser.instruments[6];
-	instruments[6] = Instrument(env, freqs);
+    freqs = instrument_serialiser.GetDefaultInstrument(6);
+    instruments[6] = Instrument(env, *freqs);
 
 	//Flute
 	env = ADSREnvelope(0.05, 1, 0.9, 0.67);
 	//TODO FIX
-	freqs = instrument_serialiser.instruments[7];
-	instruments[7] = Instrument(env, freqs);
+    freqs = instrument_serialiser.GetDefaultInstrument(7);
+    instruments[7] = Instrument(env, *freqs);
 
 	//Banjo
 	env = ADSREnvelope(0.05, 0.67, 0.1, 0.67);
-	freqs = instrument_serialiser.instruments[8];
-	instruments[8] = Instrument(env, freqs);
+    freqs = instrument_serialiser.GetDefaultInstrument(8);
+    instruments[8] = Instrument(env, *freqs);
 
 	//Drum
 	env = ADSREnvelope(0.05, 0.15, 0., 0.1);
-	freqs = instrument_serialiser.instruments[9];
-	instruments[9] = Instrument(env, freqs);
+    freqs = instrument_serialiser.GetDefaultInstrument(9);
+    instruments[9] = Instrument(env, *freqs);
 
 	//Square
 	env = ADSREnvelope(0.05, 0.15, 0.3, 0.1);
@@ -158,7 +158,7 @@ void SoundGenerator::Load_Wav_File_Into_Generator(std::string filename)
 
 double SoundGenerator::Generate_Instrument_From_Wav()
 {
-	std::vector<WaveData> constituent_waves = FourierTransformation::FFT(loadedWavs.at(wav_index), 44100);
+    std::vector<WaveData> constituent_waves = FourierTransformation::FFT(loadedWav, 44100);
 	if (constituent_waves.size() == 0)
 	{
 		std::cout << "Failed to Read File" << std::endl;
@@ -343,4 +343,21 @@ void SoundGenerator::Generate_Music(int length)
 		}
 		
 	}
+}
+
+std::vector<FrequencyBreakdown>* SoundGenerator::GetInstrumentFreqs(bool is_Custom_Instrument, int index)
+{
+    if(is_Custom_Instrument)
+    {
+        return instrument_serialiser.GetCustomInstrument(index);
+    }
+    else
+    {
+        return instrument_serialiser.GetDefaultInstrument(index);
+    }
+}
+
+int SoundGenerator::GetNumberOfCustomInstruments()
+{
+    return instrument_serialiser.GetNumberOfCustomInstruments();
 }

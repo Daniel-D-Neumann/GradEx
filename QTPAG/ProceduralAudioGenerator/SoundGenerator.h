@@ -48,7 +48,6 @@ private:
 	//possible instruments to play
 	Instrument instruments[NUM_AVAILABLE_INSTRUMENTS];
 	MarkovChain* markov_chains[NUM_AVAILABLE_INSTRUMENTS];
-public:
 	InstrumentSerialser instrument_serialiser;
 private:
 	//a buffer to store the sound values in (1 for each state so they can be combined)
@@ -80,5 +79,8 @@ public:
     double Generate_Instrument_From_Wav();
 
 	void Generate_Music(int length = -1);
+
+    std::vector<FrequencyBreakdown>* GetInstrumentFreqs(bool is_Custom_Instrument, int index);
+    int GetNumberOfCustomInstruments();
 };
 

@@ -72,5 +72,27 @@ std::vector<FrequencyBreakdown>* InstrumentSerialser::SaveInstrument(const std::
 
 	file << s;
 
+    file.close();
 	return &custom_instruments.back();
+}
+
+void InstrumentSerialser::ClearCustomInstruments()
+{
+    std::ofstream file(custom_file_path, std::ios::trunc);
+    file.close();
+}
+
+std::vector<FrequencyBreakdown>* InstrumentSerialser::GetCustomInstrument(int index)
+{
+    return &custom_instruments.at(index);
+}
+
+std::vector<FrequencyBreakdown>* InstrumentSerialser::GetDefaultInstrument(int index)
+{
+    return & instruments.at(index);
+}
+
+int InstrumentSerialser::GetNumberOfCustomInstruments()
+{
+    return static_cast<int>(custom_instruments.size());
 }
