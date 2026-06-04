@@ -62,9 +62,9 @@ std::vector<FrequencyBreakdown>* InstrumentSerialser::SaveInstrument(const std::
 	json data;
 
 	//push back newly created instrument
-	//custom_instruments.push_back(constituent_frequencies);
+    custom_instruments.push_back(constituent_frequencies);
 
-	custom_instruments = { constituent_frequencies };
+    //custom_instruments = { constituent_frequencies };
 
 	data = custom_instruments;
 

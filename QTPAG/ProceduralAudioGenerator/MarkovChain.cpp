@@ -1,5 +1,7 @@
 #include "MarkovChain.h"
 #include <cstring>
+#include <iostream>
+#include <optional>
 
 void MarkovChain::Read_File(std::string filename, File_Type file_type)
 {
@@ -374,4 +376,13 @@ int MarkovChain::Combine_States(const int* states)
 	int state_index = ((num_synchronous_states - 1) * SYNCHRONOUS_STATE_JUMP) + states[(num_synchronous_states - 1)];
 
 	return state_index;
+}
+
+void MarkovChain::Clear_Chain()
+{
+    state_starting_probabilities.clear();
+    for (int i = 0; i < MAX_STATE_INDEX; ++i)
+    {
+        state_probabilities[i].clear();
+    }
 }

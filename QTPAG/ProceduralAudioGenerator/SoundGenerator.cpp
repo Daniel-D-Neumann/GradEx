@@ -5,7 +5,7 @@
 SoundGenerator::SoundGenerator()
 {
 	Init_Instruments();
-	wav_output = new WavWriter("BlankGeneratedWavFile.wav");
+    wav_output = new WavWriter("BlankGeneratedWavFile");
 }
 
 void SoundGenerator::Init_Instruments()
@@ -107,6 +107,11 @@ SoundGenerator::~SoundGenerator()
 
 bool SoundGenerator::Load_Music_File_Into_Generator(std::string filename)
 {
+    for (int i = 0; i < NUM_AVAILABLE_INSTRUMENTS; i++)
+    {
+        markov_chains[i]->Clear_Chain();
+    }
+
 	File_Type file_type;
 	if (filename.find(".txt") != std::string::npos) file_type = TEXT;
 	else if (filename.find(".mid") != std::string::npos) file_type = MIDI;
@@ -146,14 +151,12 @@ bool SoundGenerator::Load_Music_File_Into_Generator(std::string filename)
 
 }
 
-int SoundGenerator::Load_Wav_File_Into_Generator(std::string filename)
+void SoundGenerator::Load_Wav_File_Into_Generator(std::string filename)
 {
-	int index = static_cast<int>(loadedWavs.size());
-	loadedWavs.push_back(wav_output->ReadWavFile(filename));
-	return index;
+    loadedWav = wav_output->ReadWavFile(filename);
 }
 
-double SoundGenerator::Generate_Instrument_From_Wav(int wav_index)
+double SoundGenerator::Generate_Instrument_From_Wav()
 {
 	std::vector<WaveData> constituent_waves = FourierTransformation::FFT(loadedWavs.at(wav_index), 44100);
 	if (constituent_waves.size() == 0)
@@ -248,6 +251,8 @@ void SoundGenerator::Generate_Note(float frequency, double duration, float ampli
 void SoundGenerator::Generate_Music(int length)
 {
 	//std::cout << "Generating Music" << std::endl;
+    wav_output->closeWavFile();
+    wav_output = new WavWriter("Assets/BlankGeneratedWavFile.wav");
 	std::vector<State> instrument_states[NUM_AVAILABLE_INSTRUMENTS];
 	for (int i = 0; i < NUM_AVAILABLE_INSTRUMENTS; i++)
 	{
@@ -324,7 +329,7 @@ void SoundGenerator::Generate_Music(int length)
 			for (int note = 0; note < final_note.size(); note++)
 			{
 				final_note[note] /= max_amp;
-				bool is_still_pos = (final_note[note] >= 0);
+                //bool is_still_pos = (final_note[note] >= 0);
 			}
 			
 		}

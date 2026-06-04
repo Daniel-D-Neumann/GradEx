@@ -28,6 +28,8 @@ class WavWriter{
 public:
     WavWriter(const char* filename, int sampleRate = 44100, int bitDepth = 16) :sampleRate(sampleRate), bitDepth(bitDepth) { setupWavFile(filename); }
 
+    void closeWavFile();
+
     ~WavWriter() { file.close(); }
     void WriteAudioToFile(std::vector<double> buffer);
     std::vector<double> ReadWavFile(std::string filepath);

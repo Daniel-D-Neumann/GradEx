@@ -1,10 +1,7 @@
 #pragma once
 #include "MarkovConsts.h"
 #include "MidiParser.h"
-#include <fstream>
 #include <string>
-#include <iostream>
-#include <optional>
 #include <vector>
 
 enum File_Type
@@ -33,6 +30,8 @@ public:
 	std::vector<State> Choose_Next_State(std::vector<State> states);
 
 	bool has_data() { return !state_starting_probabilities.empty(); }
+
+    void Clear_Chain();
 
 private:
 	

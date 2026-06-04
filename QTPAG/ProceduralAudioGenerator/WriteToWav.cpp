@@ -57,6 +57,14 @@ void WavWriter::setupWavFile(const char* filename)
 	preDataPos = static_cast<int>(file.tellp());
 }
 
+void WavWriter::closeWavFile()
+{
+    if(file.is_open())
+    {
+        file.close();
+    }
+}
+
 std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 {
 	std::vector<double> signal;
@@ -162,6 +170,8 @@ std::vector<double> WavWriter::ReadWavFile(std::string filepath)
 	{
 		std::cerr << "Couldn't open file" << std::endl;
 	}
+
+    wav_file.close();
 
 	return signal;
 }

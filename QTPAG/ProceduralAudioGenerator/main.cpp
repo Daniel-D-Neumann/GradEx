@@ -6,6 +6,9 @@
 
 int main(int argc, char *argv[])
 {
+    //Connect QEnums etc
+
+
     QApplication a(argc, argv);
 
     LoadingWindow w;
