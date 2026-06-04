@@ -78,6 +78,8 @@ std::vector<FrequencyBreakdown>* InstrumentSerialser::SaveInstrument(const std::
 
 void InstrumentSerialser::ClearCustomInstruments()
 {
+    custom_instruments.clear();
+
     std::ofstream file(custom_file_path, std::ios::trunc);
     file.close();
 }

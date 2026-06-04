@@ -14,7 +14,7 @@ int main()
 
 		//double msf = soundGen->Generate_Instrument_From_Wav(0);
 
-		//Timer timer = Timer("Program total time");
+		//Timer timer = Timer("Program total time");Q
 		////EXAMPLE OF HOW TO MANULLY CREATE MUSIC WITH THE PROGRAM
 		//ADSREnvelope env = ADSREnvelope(0.05, 0.15, 0.8, 0.1);
 		//std::vector<FrequencyBreakdown> freqs = soundGen->instrument_serialiser.custom_instruments[0];

@@ -2,10 +2,14 @@
 #include "./ui_pagwindow.h"
 #include "SoundGenerator.h"
 #include <QFileDialog>
+#include <QValidator>
+#include <QUrlQuery>
 #include <QMediaPlayer>
 #include <QAudioOutput>
-#include <QValidator>
-
+#include <QAudioInput>
+#include <QMediaCaptureSession>
+#include <QMediaRecorder>
+#include <QMediaFormat>
 
 PAGWindow::PAGWindow(SoundGenerator* gen, QWidget *parent)
     : QMainWindow(parent)
@@ -19,6 +23,18 @@ PAGWindow::PAGWindow(SoundGenerator* gen, QWidget *parent)
     audio_out = new QAudioOutput(this);
     med_player->setAudioOutput(audio_out);
     audio_out->setVolume(0.5f);
+
+    capture_session = new QMediaCaptureSession(this);
+    audio_in = new QAudioInput(this);
+    recorder = new QMediaRecorder(this);
+
+    capture_session->setAudioInput(audio_in);
+    capture_session->setRecorder(recorder);
+    recorder->setQuality(QMediaRecorder::HighQuality);
+    recorder->setAudioSampleRate(44100);
+    recorder->setAudioChannelCount(1);
+    recorder->setMediaFormat(QMediaFormat::Wave);
+    recorder->setOutputLocation(QUrl::fromLocalFile("Assets/InstrumentSamples/RecordedSample.wav"));
 
     ui->TI_EventsInMusic->setValidator(new QIntValidator(0,100,this));
     ui->TI_Attack->setValidator(new QDoubleValidator(0, 1, 3, this));
@@ -265,5 +281,46 @@ void PAGWindow::on_B_PauseGeneratedInsSample_clicked()
     ui->B_PauseGeneratedInsSample->setDisabled(true);
     ui->B_PlayGeneratedInsSample->setEnabled(true);
     ui->B_PlayGeneratedMusic->setEnabled(true);
+}
+
+
+void PAGWindow::on_B_ClearCustomInstruments_clicked()
+{
+    generator->ClearCustomInstruments();
+    for (--currnet_custom_instrument_count; currnet_custom_instrument_count >= 0; --currnet_custom_instrument_count)
+    {
+        ui->TB_Instruments->setItem(currnet_custom_instrument_count, 1, new QTableWidgetItem());
+    }
+    currnet_custom_instrument_count = 0;
+}
+
+
+void PAGWindow::on_B_RecordingChooseFilePath_clicked()
+{
+    QUrl dir = QFileDialog::getExistingDirectoryUrl(this, "Select a Dir", QUrl::fromLocalFile("Assets/InstrumentSamples"), QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
+    QString full_path =dir.toString() + QString("/RecordedSample.wav");
+
+    QUrl full_dir(full_path);
+
+    recorder->setOutputLocation(full_dir);
+
+    ui->TI_RecordingFilePath->setText(dir.toString());
+    ui->B_RecordAudio->setEnabled(true);
+}
+
+
+void PAGWindow::on_B_RecordAudio_clicked()
+{
+    recorder->record();
+    ui->B_EndRecordAudio->setEnabled(true);
+    ui->B_RecordAudio->setDisabled(true);
+}
+
+
+void PAGWindow::on_B_EndRecordAudio_clicked()
+{
+    recorder->stop();
+    ui->B_RecordAudio->setEnabled(true);
+    ui->B_EndRecordAudio->setDisabled(true);
 }
 

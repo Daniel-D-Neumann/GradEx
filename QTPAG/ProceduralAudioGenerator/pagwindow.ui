@@ -19,7 +19,7 @@
      <rect>
       <x>10</x>
       <y>60</y>
-      <width>113</width>
+      <width>141</width>
       <height>24</height>
      </rect>
     </property>
@@ -43,7 +43,7 @@
    <widget class="QPushButton" name="B_MusicChooseFilePath">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>160</x>
       <y>60</y>
       <width>80</width>
       <height>24</height>
@@ -218,7 +218,7 @@
      <rect>
       <x>290</x>
       <y>60</y>
-      <width>113</width>
+      <width>141</width>
       <height>24</height>
      </rect>
     </property>
@@ -229,7 +229,7 @@
    <widget class="QPushButton" name="B_InsChooseFilePath">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>440</x>
       <y>60</y>
       <width>80</width>
       <height>24</height>
@@ -537,7 +537,7 @@
      <iconset theme="QIcon::ThemeIcon::MediaPlaybackStop"/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="B_ClearCustomInstruments">
     <property name="geometry">
      <rect>
       <x>640</x>
@@ -548,6 +548,80 @@
     </property>
     <property name="text">
      <string>Clear Custom Instruments</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_RecordAudio">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>131</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Record Audio</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_EndRecordAudio">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>430</y>
+      <width>141</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>End Audio Recording</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="L_RecordingFilePath">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>File Directory To Store To:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TI_RecordingFilePath">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>141</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_RecordingChooseFilePath">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>400</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Browse</string>
     </property>
    </widget>
   </widget>

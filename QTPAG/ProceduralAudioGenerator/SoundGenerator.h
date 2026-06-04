@@ -78,9 +78,10 @@ public:
 	//Returns the most significant frequency in the wav file
     double Generate_Instrument_From_Wav();
 
-	void Generate_Music(int length = -1);
+    void Generate_Music(int length = -1);
 
     std::vector<FrequencyBreakdown>* GetInstrumentFreqs(bool is_Custom_Instrument, int index);
     int GetNumberOfCustomInstruments();
+    void ClearCustomInstruments();
 };
 

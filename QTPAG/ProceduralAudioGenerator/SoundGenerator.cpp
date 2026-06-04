@@ -361,3 +361,8 @@ int SoundGenerator::GetNumberOfCustomInstruments()
 {
     return instrument_serialiser.GetNumberOfCustomInstruments();
 }
+
+void SoundGenerator::ClearCustomInstruments()
+{
+    instrument_serialiser.ClearCustomInstruments();
+}

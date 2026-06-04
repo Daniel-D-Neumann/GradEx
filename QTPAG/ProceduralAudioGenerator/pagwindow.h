@@ -4,7 +4,10 @@
 #include <QMainWindow>
 class SoundGenerator;
 class QMediaPlayer;
+class QMediaCaptureSession;
+class QMediaRecorder;
 class QAudioOutput;
+class QAudioInput;
 class QTableWidgetItem;
 
 QT_BEGIN_NAMESPACE
@@ -48,11 +51,23 @@ private slots:
 
     void on_B_PauseGeneratedInsSample_clicked();
 
+    void on_B_ClearCustomInstruments_clicked();
+
+    void on_B_RecordingChooseFilePath_clicked();
+
+    void on_B_RecordAudio_clicked();
+
+    void on_B_EndRecordAudio_clicked();
+
 private:
     Ui::PAGWindow *ui;
     SoundGenerator* generator;
     QMediaPlayer* med_player;
     QAudioOutput* audio_out;
+
+    QMediaCaptureSession* capture_session;
+    QAudioInput* audio_in;
+    QMediaRecorder* recorder;
 
     QString music_File_Path;
     QString ins_File_Path;
