@@ -122,7 +122,6 @@ void PAGWindow::on_B_LoadMusicIntoGenerator_clicked()
 
     generator->Load_Music_File_Into_Generator(filePath);
 
-    ui->CB_SongLoaded->setCheckState(Qt::Checked);
     ui->B_MusicGenerate->setEnabled(true);
 }
 
@@ -131,7 +130,23 @@ void PAGWindow::on_B_MusicGenerate_clicked()
     int num_events = ui->TI_EventsInMusic->text().toInt();
     if(num_events <= 0) return;
 
-    generator->Generate_Music(num_events);
+    if(override_instrument)
+    {
+        if(ui->TB_Instruments->currentItem()->column() == 0)
+        {
+            overriding_instrument = ui->TB_Instruments->currentItem()->row();
+        }
+        else
+        {
+            overriding_instrument = ui->TB_Instruments->currentItem()->row() + 10;
+        }
+        generator->Generate_Music(num_events, overriding_instrument);
+    }
+    else
+    {
+        generator->Generate_Music(num_events);
+    }
+
     ui->B_PlayGeneratedMusic->setEnabled(true);
 }
 
@@ -170,12 +185,19 @@ void PAGWindow::on_B_InsGenerate_clicked()
 
     generated_instrument_row = currnet_custom_instrument_count;
     currnet_custom_instrument_count++;
+
+    ADSREnvelope env = ADSREnvelope(ui->TI_Attack->text().toDouble(),ui->TI_Decay->text().toDouble(),ui->TI_Sustain->text().toDouble(),ui->TI_Release->text().toDouble());
+    std::vector<FrequencyBreakdown>* freqs = generator->GetInstrumentFreqs(selected_instrument_column, selected_instrument_row);
+    Instrument custIns = Instrument(env,*freqs);
+
+    generator->AddCustomInstrument(custIns);
 }
 
 
 void PAGWindow::on_TB_Instruments_itemClicked(QTableWidgetItem *item)
 {
     ui->B_InsSampleGenerate->setEnabled(true);
+    ui->CB_SongLoaded_2->setEnabled(true);
     selected_instrument_column = item->column();
     selected_instrument_row = item->row();
 }
@@ -194,13 +216,17 @@ void PAGWindow::on_B_InsSampleGenerate_clicked()
     {
         MSF = wav_MSF;
     }
+    if(MSF == 0)
+    {
+        MSF = 440.0;
+    }
 
-    custIns->Sound(&harmC,1.f, MSF,1.f,44100.f);
+    custIns->Sound(&harmC,1.f, MSF,.3f,44100.f);
     custIns->Sound(&harmD4,0.2f,custIns->MoveSemitones(MSF,1),1.f,44100.f);
     custIns->Sound(&harmD5,0.2f, custIns->MoveSemitones(MSF, 13),1.f,44100.f);
     custIns->Sound(&harmA, 0.2f, custIns->MoveSemitones(MSF, 9), 1.f, 44100.f);
-    custIns->Sound(&harmE, 1.f, custIns->MoveSemitones(MSF, 4), 1.f, 44100.f);
-    custIns->Sound(&harmG, 1.f, custIns->MoveSemitones(MSF, 7), 1.f, 44100.f);
+    custIns->Sound(&harmE, 1.f, custIns->MoveSemitones(MSF, 4), .3f, 44100.f);
+    custIns->Sound(&harmG, 1.f, custIns->MoveSemitones(MSF, 7), .3f, 44100.f);
     silence->Sound(&sile, 0.2f, 0.f, 0.f, 44100.f);
 
     for (int i = 0; i<harmC.size(); i++)
@@ -233,6 +259,9 @@ void PAGWindow::on_B_PlayGeneratedInsSample_clicked()
     }
     else
     {
+        audio_out = new QAudioOutput(this);
+        med_player->setAudioOutput(audio_out);
+        audio_out->setVolume(0.5f);
         med_player->setSource(QUrl::fromLocalFile("Assets/InstrumentSample.wav"));
         med_player->play();
         ui->B_PauseGeneratedInsSample->setEnabled(true);
@@ -255,6 +284,9 @@ void PAGWindow::on_B_PlayGeneratedMusic_clicked()
     }
     else
     {
+        audio_out = new QAudioOutput(this);
+        med_player->setAudioOutput(audio_out);
+        audio_out->setVolume(0.5f);
         med_player->setSource(QUrl::fromLocalFile("Assets/BlankGeneratedWavFile.wav"));
         med_player->play();
         ui->B_PauseGeneratedMusic->setEnabled(true);
@@ -322,5 +354,18 @@ void PAGWindow::on_B_EndRecordAudio_clicked()
     recorder->stop();
     ui->B_RecordAudio->setEnabled(true);
     ui->B_EndRecordAudio->setDisabled(true);
+}
+
+
+void PAGWindow::on_CB_SongLoaded_2_stateChanged(int newState)
+{
+    if(newState == Qt::Checked)
+    {
+        override_instrument = true;
+    }
+    else if (newState == Qt::Unchecked)
+    {
+        override_instrument = false;
+    }
 }
 

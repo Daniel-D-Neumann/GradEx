@@ -59,6 +59,8 @@ private slots:
 
     void on_B_EndRecordAudio_clicked();
 
+    void on_CB_SongLoaded_2_stateChanged(int arg1);
+
 private:
     Ui::PAGWindow *ui;
     SoundGenerator* generator;
@@ -79,5 +81,8 @@ private:
     int selected_instrument_column = 0;
     int generated_instrument_row = -1;
     bool is_Instrument_Sample_Playing = false;
+
+    int overriding_instrument = -1;
+    bool override_instrument = false;
 };
 #endif // PAGWINDOW_H

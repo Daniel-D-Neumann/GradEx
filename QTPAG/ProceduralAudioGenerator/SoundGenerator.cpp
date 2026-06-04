@@ -10,6 +10,7 @@ SoundGenerator::SoundGenerator()
 
 void SoundGenerator::Init_Instruments()
 {
+    instruments.resize(NUM_AVAILABLE_INSTRUMENTS);
     std::vector<FrequencyBreakdown>* freqs;
 	ADSREnvelope env;
 
@@ -76,7 +77,7 @@ void SoundGenerator::Init_Instruments()
 	env = ADSREnvelope(0.01, 0, 0, 1.0);
 	//freqs = ...
 
-	for (int instrument = 0; instrument < NUM_AVAILABLE_INSTRUMENTS; instrument++)
+    for (int instrument = 0; instrument < instruments.size(); instrument++)
 	{
 		markov_chains[instrument] = new MarkovChain();
 		markov_chains[instrument]->instrument = instrument;
@@ -86,6 +87,13 @@ void SoundGenerator::Init_Instruments()
 	{
 		note_buffers[i] = new std::vector<double>();
 	}
+
+    for (int i = 0; i < instrument_serialiser.GetNumberOfCustomInstruments(); ++i)
+    {
+        env = ADSREnvelope(0.05, 0.5, 0.5, 0.5);
+        freqs = instrument_serialiser.GetCustomInstrument(i);
+        instruments.push_back(Instrument(env,*freqs));
+    }
 }
 
 SoundGenerator::~SoundGenerator()
@@ -243,16 +251,25 @@ bool SoundGenerator::Get_File_Instrument(std::string filename, File_Type file_ty
 	return false;
 }
 
-void SoundGenerator::Generate_Note(float frequency, double duration, float amplitude, Instruments instrument, int buffer_index)
+void SoundGenerator::Generate_Note(float frequency, double duration, float amplitude, Instruments instrument, int buffer_index, int instrument_override)
 {
-	instruments[instrument].Sound(note_buffers[buffer_index], duration, frequency, amplitude);
+    if(instrument_override == -1)
+    {
+        instruments[instrument].Sound(note_buffers[buffer_index], duration, frequency, amplitude);
+    }
+    else
+    {
+        instruments[instrument_override].Sound(note_buffers[buffer_index], duration, frequency, amplitude);
+    }
+
 }
 
-void SoundGenerator::Generate_Music(int length)
+void SoundGenerator::Generate_Music(int length, int instrument_override)
 {
 	//std::cout << "Generating Music" << std::endl;
     wav_output->closeWavFile();
     wav_output = new WavWriter("Assets/BlankGeneratedWavFile.wav");
+
 	std::vector<State> instrument_states[NUM_AVAILABLE_INSTRUMENTS];
 	for (int i = 0; i < NUM_AVAILABLE_INSTRUMENTS; i++)
 	{
@@ -291,10 +308,10 @@ void SoundGenerator::Generate_Music(int length)
 				if (cur_state.Is_Silence())
 				{
 					if(k==0) 
-						Generate_Note(0.f, duration, 0.f, static_cast<Instruments>(instrument), k);
+                        Generate_Note(0.f, duration, 0.f, static_cast<Instruments>(instrument), k, instrument_override);
 				}
 				else 
-					Generate_Note(note, duration, 0.2f, static_cast<Instruments>(instrument), (instrument *NUM_POSSIBLE_SYNCHRONOUS_STATES)+k);
+                    Generate_Note(note, duration, 0.2f, static_cast<Instruments>(instrument), (instrument *NUM_POSSIBLE_SYNCHRONOUS_STATES)+k, instrument_override);
 			}
 
 		}
@@ -365,4 +382,9 @@ int SoundGenerator::GetNumberOfCustomInstruments()
 void SoundGenerator::ClearCustomInstruments()
 {
     instrument_serialiser.ClearCustomInstruments();
+}
+
+void SoundGenerator::AddCustomInstrument(Instrument instrument)
+{
+    instruments.push_back(instrument);
 }
