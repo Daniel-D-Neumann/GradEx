@@ -1,4 +1,5 @@
 #include "Instrument.h"
+#include "Timer.h"
 
 //Moves a frequency by a number of semitones e.g. a 12 semitone jump is up an octave
 double Instrument::MoveSemitones(float curFreq, double numSemitones)
@@ -32,15 +33,16 @@ void Instrument::Sound(std::vector<double>* buffer, double duration, float frequ
 
 	buffer->reserve(static_cast<size_t>(total_samples));
 
+    {
+        Timer t = Timer("SOUND");
 	for (int i = 0; i < total_samples; i++)
 	{
-		double sample = 0;
-		//add all the amplitudes of all constiuent frequencies that make this note
-		for (const FrequencyBreakdown& freq : constituent_frequencies)
-		{
-			sample += freq.amp * oscillator.GetValue(MoveSemitones(frequency, freq.relative_semitones), time, freq.osc.oscillator_type, freq.phase, freq.osc.LFO_hertz, freq.osc.LFO_amp);
-		}
+        double sample = 0;
 
+        for(int i = 0; i < constituent_frequencies.size(); i++)
+        {
+            sample +=constituent_frequencies[i].amp * std::sin((frequency*pow(semitone_exponent,constituent_frequencies[i].relative_semitones))*TAU*time+constituent_frequencies[i].phase);
+        }
 		//Modify by the amplitude of the envelope
 		double amp = env.GetAmplitude(time) * amplitude;
 
@@ -69,6 +71,7 @@ void Instrument::Sound(std::vector<double>* buffer, double duration, float frequ
 		//Add sample to the buffer
 		buffer->push_back(sample);
 	}
+    }
 }
 
 void Silence::Sound(std::vector<double>* buffer, double duration, float frequency, float amplitude, float sampleRate)

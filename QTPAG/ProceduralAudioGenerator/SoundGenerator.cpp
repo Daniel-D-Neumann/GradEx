@@ -253,14 +253,25 @@ bool SoundGenerator::Get_File_Instrument(std::string filename, File_Type file_ty
 
 void SoundGenerator::Generate_Note(float frequency, double duration, float amplitude, Instruments instrument, int buffer_index, int instrument_override)
 {
-    if(instrument_override == -1)
+
+    auto it = std::find(seen_notes.begin(),seen_notes.end(),SeenIns(frequency,instrument));
+    if(it != seen_notes.end())
     {
-        instruments[instrument].Sound(note_buffers[buffer_index], duration, frequency, amplitude);
+        note_buffers[buffer_index] = &it->vals;
     }
     else
     {
-        instruments[instrument_override].Sound(note_buffers[buffer_index], duration, frequency, amplitude);
+        if(instrument_override == -1)
+        {
+            instruments[instrument].Sound(note_buffers[buffer_index], duration, frequency, amplitude);
+        }
+        else
+        {
+            instruments[instrument_override].Sound(note_buffers[buffer_index], duration, frequency, amplitude);
+        }
+        seen_notes.push_back(SeenIns(frequency,instrument, *note_buffers[buffer_index]));
     }
+
 
 }
 

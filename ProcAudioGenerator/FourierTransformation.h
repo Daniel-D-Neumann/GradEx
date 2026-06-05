@@ -98,7 +98,7 @@ namespace FourierTransformation
 		return num + 1;
 	}
 
-	const double TAU = 2 * std::numbers::pi;
+	const double TAU = 2 * 3.14;
 
 	static std::vector<WaveData> DFT(std::vector<double> signal, int sample_rate)
 	{

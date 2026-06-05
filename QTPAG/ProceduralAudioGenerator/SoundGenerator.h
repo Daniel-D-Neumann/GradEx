@@ -38,6 +38,30 @@ enum Instruments
  PIANO, MARIMBA, HARMONICA, ACOUSTIC_GUITAR, BASS_GUITAR, VIOLIN, TRUMPET, FLUTE, BANJO, DRUM, SYNTHSQUARE, SYNTHSAW
 };
 
+struct SeenIns
+{
+    float freq;
+    Instruments instruement;
+    std::vector<double> vals;
+
+    SeenIns(float freq, Instruments ins)
+    {
+        this->freq =freq;
+        this->instruement = ins;
+    }
+
+    SeenIns(float freq, Instruments ins, std::vector<double> vals)
+    {
+        this->freq =freq;
+        this->instruement = ins;
+        this->vals = vals;
+    }
+
+    bool operator==(const SeenIns& other) const
+    {
+        return (this->freq == other.freq && this->instruement == other.instruement);
+    }
+};
 
 class SoundGenerator
 {
@@ -49,6 +73,8 @@ private:
 private:
 	//a buffer to store the sound values in (1 for each state so they can be combined)
 	std::vector<double>* note_buffers[NUM_AVAILABLE_INSTRUMENTS*NUM_POSSIBLE_SYNCHRONOUS_STATES];
+
+    std::vector<SeenIns> seen_notes;
 
 	//so the music can be outputted as a wav
 	WavWriter* wav_output;

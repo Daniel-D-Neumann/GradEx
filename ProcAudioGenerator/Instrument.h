@@ -9,6 +9,7 @@ using namespace nlohmann::literals;
 
 static Oscillator oscillator = Oscillator();
 
+
 struct OscillatorBreakdown
 {
 	bool is_FM = false;
@@ -57,6 +58,7 @@ struct WaveData
 };
 
 const double semitone_exponent = 1.0594630943592952645618252949463;
+const double TAU = 2 * 3.14;
 
 class Instrument
 {

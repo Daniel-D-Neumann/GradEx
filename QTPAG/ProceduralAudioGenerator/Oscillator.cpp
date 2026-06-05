@@ -4,7 +4,7 @@
 
 double Oscillator::hertzToAngularVelocity(double hertz)
 {
-	return hertz * 2.0 * PI;
+    return hertz * TAU;
 }
 
 double Oscillator::MakeFMSin(double frequency, double deltaTime, double phase_shift, double LFOHertz, double LFOAmplitude)
